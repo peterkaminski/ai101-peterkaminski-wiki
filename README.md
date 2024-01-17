@@ -16,3 +16,7 @@ The sessions listed below have pages on this website with a link to the recordin
 - [[Midjourney v6 and GPT Jailbreaks, 2024-01-13]]
 - [[GPTs and APIs, 2024-01-04]]
 - [[Let's Build an API and a GPT, 2023-12-05]]
+
+## Other Resources
+
+RJ has a great organized and curated list of resources for getting into AI, at [Meetup Group AI 101 Links](https://mysiteon.yolasite.com/ai101links.php).
