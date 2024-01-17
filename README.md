@@ -4,7 +4,7 @@
 
 ## Discussion Space
 
-Our main discussion space is [Peter's AI 101](https://aisalon.mn.co/share/phFsHUTlVUiSHKGt) on the **AI Salon** Mighty Networks server. Free **AI Salon** registration is required.
+Our main discussion space is [Peter's AI 101](https://aisalon.mn.co/share/phFsHUTlVUiSHKGt) guild on the **AI Salon** Mighty Networks server. Free **AI Salon** registration is required.
 
 ## Videoconference Recordings
 
