@@ -1,8 +1,10 @@
 # Mega prompts with guest Lee Chazen, 2024-01-16
 
-YouTube: <https://youtu.be/OLQntoglQnU>
+**YouTube:** <https://youtu.be/OLQntoglQnU>
 
 Recorded live AI Salon / AI 101 session with Lee Chazen on ChatGPT mega prompts, FlexGPT, and Poe.com.
+
+**Previous:** [[Midjourney v6 and GPT Jailbreaks, 2024-01-13]]
 
 ## AI Summary
 

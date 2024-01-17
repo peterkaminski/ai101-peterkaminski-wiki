@@ -4,6 +4,10 @@ YouTube: <https://youtu.be/Qe9NRsARZ8U>
 
 Recorded live AI Salon / AI 101 session on GPTs, APIs, etc.
 
+**Previous:** [[GPTs and APIs, 2024-01-04]]
+
+**Next:** [[Mega prompts with guest Lee Chazen, 2024-01-16]]
+
 ## AI Summary 
 
 ### MAY BE INACCURATE, confirm with video for accuracy
