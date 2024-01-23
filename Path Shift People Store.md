@@ -12,4 +12,4 @@ Pete is one of the founders of Path Shift People, which is a small but growing g
 
 Our offerings will include recorded courses, live seminars, 1-to-1 coaching, and consulting services. Contact [support@pathshiftpeople.com](mailto:support@pathshiftpeople.com) for more details.
 
-*As the AI wave sweeps over all of us, Path Shift People will help hold you steady.*'
+*As the AI wave sweeps over all of us, Path Shift People will help hold you steady.*
