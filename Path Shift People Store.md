@@ -2,7 +2,7 @@
 
 ## Pete's listings
 
-- [Obsidian Introduction with Pete](https://store.pathshiftpeople.com/l/obsidian-introduction-with-pete) (name your price, $0+), 2024-01-22
+- [Obsidian Introduction with Pete](https://store.pathshiftpeople.com/l/obsidian-introduction-with-pete) (name your price), 2024-01-22
 
 All products: [Path Shift People Store](https://store.pathshiftpeople.com/). Prices vary, from $0 and up.
 
