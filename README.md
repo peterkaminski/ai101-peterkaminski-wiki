@@ -19,4 +19,5 @@ The sessions listed below have pages on this website with a link to the recordin
 
 ## Other Resources
 
-RJ has a great organized and curated list of resources for getting into AI, at [Meetup Group AI 101 Links](https://mysiteon.yolasite.com/ai101links.php).
+- Pete has additional tutorial videos in the [[Path Shift People Store]]. Prices vary, from $0 and up.
+- RJ has a great organized and curated list of resources for getting into AI, at [Meetup Group AI 101 Links](https://mysiteon.yolasite.com/ai101links.php).
