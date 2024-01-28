@@ -1,6 +1,6 @@
 # Bulk downloading images from Midjourney
 
-We covered downloading your images from Midjourney for safekeeping or additional operations a little on one of the AI 101 sessions on Friday, 2024-01-26.
+We covered downloading your images from Midjourney for safekeeping or additional operations a little during one of the AI 101 sessions on Friday, 2024-01-26.
 
 Since it's been a month or two, I decided to go get some downloaded, and I have to report, it's still very frustrating.
 
