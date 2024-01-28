@@ -18,7 +18,7 @@ The legacy site, [https://legacy.midjourney.com/](https://legacy.midjourney.com
   
 I highly recommend keeping a spreadsheet or database when you're downloading, because you need to track what you've downloaded each time you do a backup. My columns are currently:
 
-Date in interface, Date in zip filenames, Date downloaded, Number of images  
+**Date in interface, Date in zip filenames, Date downloaded, Number of images**  
 
 Cross-checking the number of images reported in the web interface against the number of files in the zip filenames, and then when you unzip, helps make sure you've got all the files, and hopefully no duplicates; plus, it helps distinguish the days the images were generated, when the dates in the filenames aren't right.
 
