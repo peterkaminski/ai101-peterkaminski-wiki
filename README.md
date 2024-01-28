@@ -20,6 +20,7 @@ The sessions listed below have pages on this website with a link to the recordin
 
 ## Topics
 
+- [[Midjourney]] - a very good image generator
 - [[Obsidian+Git]] - useful for GPT makers and ChatGPT users
 
 ## Other Resources
