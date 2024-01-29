@@ -1,5 +1,10 @@
 # What's New
 
+## 2024-01-29
+
+- [[Learning more about REST APIs]]
+- [[API]]
+
 ## 2024-01-28
 
 - [[Bulk downloading images from Midjourney]]
