@@ -1,6 +1,6 @@
 # AI 101 Open Session, 2024-01-26b
 
-YouTube: <https://youtu.be/_6HZB1PNT3c>
+YouTube: <https://youtu.be/WgJtfxWmlrg>
 
 Recorded live AI Salon / AI 101 session on AI topics.
 
