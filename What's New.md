@@ -1,5 +1,11 @@
 # What's New
 
+## 2024-01-30
+
+- [[AI 101 Open Session, 2024-01-26b]]
+- [[AI 101 Open Session, 2024-01-26a]]
+- [[AI 101 Open Session, 2024-01-23]]
+
 ## 2024-01-29
 
 - [[Learning more about REST APIs]]

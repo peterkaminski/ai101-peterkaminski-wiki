@@ -12,6 +12,9 @@ Pete hosts live **AI 101** videoconferences. Check the "Events" tab in **[Peter'
 
 The sessions listed below have pages on this website with a link to the recording, and any chats, summaries, or downloadable files.
 
+- [[AI 101 Open Session, 2024-01-26b]]
+- [[AI 101 Open Session, 2024-01-26a]]
+- [[AI 101 Open Session, 2024-01-23]]
 - [[Obsidian+Git for GPTs and ChatGPT conversations, 2024-01-21]]
 - [[Mega prompts with guest Lee Chazen, 2024-01-16]]
 - [[Midjourney v6 and GPT Jailbreaks, 2024-01-13]]
