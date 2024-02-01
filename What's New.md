@@ -1,5 +1,10 @@
 # What's New
 
+## 2024-01-31
+
+- topic pages: [[Mobile app]], [[Android]], [[ChatGPT]], [[DALL-E]]
+- [[On mobile, how do I post a DALL-E image to Show and Tell?]]
+
 ## 2024-01-30
 
 - [[AI 101 Open Session, 2024-01-26b]]
