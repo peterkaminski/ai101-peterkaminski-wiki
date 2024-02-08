@@ -1,5 +1,9 @@
 # What's New
 
+## 2024-02-07
+
+- [[How to use exiftool to retrieve the image prompt from a Midjourney PNG file]]
+
 ## 2024-01-31
 
 - topic pages: [[Mobile app]], [[Android]], [[ChatGPT]], [[DALL-E]]
