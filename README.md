@@ -26,6 +26,7 @@ The sessions listed below have pages on this website with a link to the recordin
 - [[Midjourney]] - a very good image generator
 - [[Obsidian+Git]] - useful for GPT makers and ChatGPT users
 - [[API]] - an API is used by computer systems to exchange data and perform operations, and can be used by GPTs
+- [[Python]] - a popular programming language (sometimes knowing a little about it is helpful for AI stuff)
 
 ## Other Resources
 
