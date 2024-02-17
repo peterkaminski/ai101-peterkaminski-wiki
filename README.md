@@ -27,6 +27,7 @@ The sessions listed below have pages on this website with a link to the recordin
 - [[Obsidian+Git]] - useful for GPT makers and ChatGPT users
 - [[API]] - an API is used by computer systems to exchange data and perform operations, and can be used by GPTs
 - [[Python]] - a popular programming language (sometimes knowing a little about it is helpful for AI stuff)
+- [[Upcoming Topics]] - topics that don't have their own pages yet
 
 ## Other Resources
 
