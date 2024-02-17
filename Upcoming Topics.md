@@ -42,7 +42,16 @@ Not just for software developers!
 ## Personal Knowledge Managers
 
 - Obsidian, Logseq, Notion, Coda, Roam, etc.
-	- Getting started with Obsidian: search youtube for "obsidian beginner" (and "obsidian <other tool>" where "other tool" is one or more of the above)
-	- Obsidian Iceberg (Eleanor Konik) - https://www.eleanorkonik.com/
-- Scrivener (older software for writers)
+- OneNote, Google Keep, Apple Notes
+- Scrivener (older software for writers), Evernote (older PKM)
 
+## Obsidian
+
+- Getting started with Obsidian: search youtube for "obsidian beginner", and "obsidian (other tool)" where "other tool" is one or more of the above
+- Obsidian Iceberg (Eleanor Konik) - https://www.eleanorkonik.com/
+
+## Upscaling Images
+
+- your image generator's native upscaling
+- Topaz Photo AI
+- [Upscayl](https://github.com/upscayl) (h/t user "Digital Gods" on AI Salon)
