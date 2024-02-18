@@ -1,6 +1,6 @@
 # Copyright and AI Images
 
-This is copied from Pete's upcoming $5/month AI images email newsletter, which will be available soon via the [[Path Shift People Store]].
+This is copied from Pete's upcoming $5/month AI images email newsletter, which is available now via the [[Path Shift People Store]].
 
 Also to note, in the US, AI images currently cannot be copyrighted.
 
