@@ -4,7 +4,7 @@ YouTube: <https://youtu.be/WgJtfxWmlrg>
 
 Recorded live AI Salon / AI 101 session on AI topics.
 
-**Next:** _coming soon_
+**Next:** [[AI 101 Live Session, 2024-02-01]]
 
 **Previous:** [[AI 101 Open Session, 2024-01-26a]]
 

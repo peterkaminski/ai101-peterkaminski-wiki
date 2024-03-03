@@ -14,20 +14,20 @@ The sessions listed below have pages on this website with a link to the recordin
 
 ### March 2024
 
-- [[AI 101 Live Session, 2024-03-02]]
-- [[AI 101 Live Session, 2024-03-01]]
+- [[AI 101 Live Session, 2024-03-02]] - Markdown, Obsidian install and first steps
+- [[AI 101 Live Session, 2024-03-01]] - Image workflow
 
 ### February 2024
 
 - [[AI 101, Let's Learn About APIs (and a tiny bit of trying Claude API), 2024-02-24]]
-- [[AI 101 Live Session, 2024-02-23]]
-- [[AI 101 Live Session, 2024-02-22]]
-- [[AI 101 Live Session, 2024-02-17]]
-- [[AI 101 Live Session, 2024-02-15]]
-- [[AI 101 Live Session, 2024-02-10]]
-- [[AI 101 Live Session, 2024-02-08]]
-- [[AI 101 Live Session, 2024-02-03]]
-- [[AI 101 Live Session, 2024-02-01]]
+- [[AI 101 Live Session, 2024-02-23]] - LLMs and teaching / learning
+- [[AI 101 Live Session, 2024-02-22]] - Midjourney, DALL-E, temperature/chaos
+- [[AI 101 Live Session, 2024-02-17]] - Obsidian, computational thinking, ChatGPT Exporter, learning Python
+- [[AI 101 Live Session, 2024-02-15]] - Computational thinking, OpenAI API
+- [[AI 101 Live Session, 2024-02-10]] - NFTs as a marketplace for AI art
+- [[AI 101 Live Session, 2024-02-08]] - Obsidian, exiftool, etiquette, legalities
+- [[AI 101 Live Session, 2024-02-03]] - local AI, GitHub as professional profile, LLMs and image generators
+- [[AI 101 Live Session, 2024-02-01]] - image generators, image editors, digitization, surveillance, Massive Wiki Builder, Obsidian
 
 ### January 2024
 
