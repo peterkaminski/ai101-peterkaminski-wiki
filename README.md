@@ -12,6 +12,8 @@ Pete hosts live **AI 101** videoconferences. Check the "Events" tab in **[Peter'
 
 The sessions listed below have pages on this website with a link to the recording, and any chats, summaries, or downloadable files.
 
+Click on the name of a session to go to that session's web page.
+
 ### March 2024
 
 - [[AI 101 Live Session, 2024-03-02]] - Markdown, Obsidian install and first steps
@@ -42,6 +44,10 @@ The sessions listed below have pages on this website with a link to the recordin
 ### December 2023
 
 - [[Let's Build an API and a GPT, 2023-12-05]]
+
+### YouTube Playlist
+
+The videos are also listed on YouTube in an [AI 101 YouTube Playlist](https://youtube.com/playlist?list=PLADGyQqAcmirQAq6Kp9r75uFQrq-THPhi) if that is convenient for you.
 
 ## Topics
 
