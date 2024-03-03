@@ -19,7 +19,7 @@ The sessions listed below have pages on this website with a link to the recordin
 
 ### February 2024
 
-- [[AI 101, Let's Learn About APIs (and a tiny bit of trying Claude API), 2024-02-24]]
+- [[AI 101, Let's Learn About APIs (and a tiny bit of trying Claude API), 2024-02-24]] - deep dive on APIs, a tiny bit about Claude API
 - [[AI 101 Live Session, 2024-02-23]] - LLMs and teaching / learning
 - [[AI 101 Live Session, 2024-02-22]] - Midjourney, DALL-E, temperature/chaos
 - [[AI 101 Live Session, 2024-02-17]] - Obsidian, computational thinking, ChatGPT Exporter, learning Python
