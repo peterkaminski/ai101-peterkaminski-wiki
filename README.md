@@ -6,11 +6,30 @@
 
 Our main discussion space is in **[Peter's AI 101](https://aisalon.mn.co/share/phFsHUTlVUiSHKGt)** guild on the **AI Salon** community site. Free **AI Salon** registration is required.
 
-## Videoconference Recordings
+## Live Session Recordings
 
 Pete hosts live **AI 101** videoconferences. Check the "Events" tab in **[Peter's AI 101](https://aisalon.mn.co/share/phFsHUTlVUiSHKGt)** discussion space for upcoming events.
 
 The sessions listed below have pages on this website with a link to the recording, and any chats, summaries, or downloadable files.
+
+### March 2024
+
+- [[AI 101 Live Session, 2024-03-02]]
+- [[AI 101 Live Session, 2024-03-01]]
+
+### February 2024
+
+- [[AI 101, Let's Learn About APIs (and a tiny bit of trying Claude API), 2024-02-24]]
+- [[AI 101 Live Session, 2024-02-23]]
+- [[AI 101 Live Session, 2024-02-22]]
+- [[AI 101 Live Session, 2024-02-17]]
+- [[AI 101 Live Session, 2024-02-15]]
+- [[AI 101 Live Session, 2024-02-10]]
+- [[AI 101 Live Session, 2024-02-08]]
+- [[AI 101 Live Session, 2024-02-03]]
+- [[AI 101 Live Session, 2024-02-01]]
+
+### January 2024
 
 - [[AI 101 Open Session, 2024-01-26b]]
 - [[AI 101 Open Session, 2024-01-26a]]
@@ -19,6 +38,9 @@ The sessions listed below have pages on this website with a link to the recordin
 - [[Mega prompts with guest Lee Chazen, 2024-01-16]]
 - [[Midjourney v6 and GPT Jailbreaks, 2024-01-13]]
 - [[GPTs and APIs, 2024-01-04]]
+
+### December 2023
+
 - [[Let's Build an API and a GPT, 2023-12-05]]
 
 ## Topics
