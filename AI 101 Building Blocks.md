@@ -27,11 +27,18 @@ Knowing Computer 101 is important to be able to move into AI 101.
 
 ---
 
-Need to add:
+Need to add (no particular order):
 
 - Glossary items
 - GPTs and other custom chatbots (FlowGPT, Poe, etc.)
 - Using "stitcher" integration solutions like Zapier, Make, etc.
 - Using APIs from chatbots
+- Using the command line
+- Using Python
+- Installing Git
+- Authenticating with GitHub
+- Creating websites
+- Running a virtual computer
+- Running Docker
 
 Also see: [[Upcoming Topics]]
