@@ -74,20 +74,21 @@
 
 ### "Homework"
 
-Search for alternative LLM frontends
+Search for alternative LLM frontends, so we can use "wholesale" API access to LLMs
 
 ### Terminal / Command line
 
-- chap
-- llm - https://llm.datasette.io/
+- chap - <https://github.com/jepler/chap/>
+- llm - <https://llm.datasette.io/>
 
 ### Mac GUI
 
-- MacGPT - https://www.macgpt.com/
+- MacGPT - <https://www.macgpt.com/>
 
 ### Windows
 
 - stuff goes here
+- built-in Microsoft tools and affordances
 
 ### Web
 
