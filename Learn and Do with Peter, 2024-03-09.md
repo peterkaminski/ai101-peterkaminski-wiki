@@ -24,7 +24,7 @@ Pete initiated a conversation about various topics without a specific agenda. Th
 Exploring Alternative LLM Front Ends and Practical Projects 
 Pete, Jeannie, and R discuss the possibility of creating an alternative Llm front end for multiple LMs, focusing on writing a simple front end using Python and working with Claud and Openai. They also consider working on practical projects that would be useful for each person, such as learning mid-journey tips and tricks. Jeannie shares her experience with a project called Dx OS composer, which is a blockchain-based front-end for Dolly. 
 
-**Understanding Back Ends: A Language Model Perspective **
+**Understanding Back Ends: A Language Model Perspective**
 
 Pete discussed the structure of a large language model, comparing it to a restaurant's front and back office. He emphasized the simplicity of the back end and the importance of understanding its workings to make informed decisions about front ends and back ends. Pete also recommended exploring the engine under the hood of a luxury car as an analogy for understanding the workings of the back end. Towards the end, he suggested using the terminal, learning simple GUI concepts, and learning Python to unlock more capabilities. 
 
