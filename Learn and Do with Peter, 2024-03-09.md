@@ -6,7 +6,7 @@ YouTube: <https://youtu.be/uIB7jz6h_Vo>
 
 Notes: [[Learn and Do with Peter Notes, 2024-03-09]]
 
-**Next:** _link coming soon_
+**Next:** [[Learn and Do with Peter, 2024-03-10]]
 
 **Previous:** [[AI 101 Live Session, 2024-03-02]]
 

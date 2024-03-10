@@ -4,7 +4,7 @@ YouTube: <https://youtu.be/muTfh9HKkkA>
 
 Recorded live AI Salon / AI 101 session on AI topics.
 
-**Next:** _link coming soon_
+**Next:** [[Learn and Do with Peter, 2024-03-09]]
 
 **Previous:** [[AI 101 Live Session, 2024-03-01]]
 
