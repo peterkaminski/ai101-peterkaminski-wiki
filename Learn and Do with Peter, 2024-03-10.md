@@ -10,7 +10,7 @@ Notes: [[Learn and Do with Peter Notes, 2024-03-10]]
 
 ## Human Summary
 
-We continued with "build our own alternative frontend to LLMs" with **Salamander**, and published a first, not-quite-ready-but-we-still-did-it version to GitHub as open source: <https://github.com/peterkaminski/salamander>. (Crib some but not all of the instructions from <https://github.com/peterkaminski/sylph> until we get Salamander-specific instructions written.)
+We continued with "build our own alternative frontend to LLMs" with **Salamander**, and published a first, not-quite-ready-but-we-still-did-it version to GitHub as open source: <https://github.com/peterkaminski/salamander>. (For now, crib some but not all of the instructions from <https://github.com/peterkaminski/sylph> until we get Salamander-specific instructions written.)
 
 Along with some work with Salamander and discussing next steps in its development (the "Salamander Roadmap"), some questions we covered:
 

@@ -16,6 +16,7 @@ Click on the name of a session to go to that session's web page.
 
 ### March 2024
 
+- [[Learn and Do with Peter, 2024-03-10]] - Our own LLM front-end, Salamander
 - [[Learn and Do with Peter, 2024-03-09]] - Why (or why not) to build our own LLM front-end
 - [[AI 101 Live Session, 2024-03-02]] - Markdown, Obsidian install and first steps
 - [[AI 101 Live Session, 2024-03-01]] - Image workflow
