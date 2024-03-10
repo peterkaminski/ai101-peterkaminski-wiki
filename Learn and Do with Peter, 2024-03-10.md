@@ -1,6 +1,6 @@
 # Learn and Do with Peter, 2024-03-10
 
-YouTube: _link coming soon_
+YouTube: <https://youtu.be/KWrNgOdLrFE>
 
 Notes: [[Learn and Do with Peter Notes, 2024-03-10]]
 
