@@ -2,7 +2,7 @@
 
 The overall topic today was "Why (or why not) to build our own LLM front-end", with lots of smaller topics mixed in. The topic may be continued tomorrow, unless attendees want to switch to a different topic.
 
-YouTube: _coming soon_
+YouTube: <https://youtu.be/uIB7jz6h_Vo>
 
 Notes: [[Learn and Do with Peter Notes, 2024-03-09]]
 
