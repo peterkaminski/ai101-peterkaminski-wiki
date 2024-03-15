@@ -1,6 +1,6 @@
 # Top AIs
 
-_This is a continually evolving list of the top AI tools. Give us feedback: [[Contact Peter Kaminski]]
+_This is a continually evolving list of the top AI tools. Give us feedback: [[Contact Peter Kaminski]]_
 
 ## Top Large Language Models (LLMs)
 
