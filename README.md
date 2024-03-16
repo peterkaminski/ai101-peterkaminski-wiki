@@ -53,6 +53,8 @@ The videos are also listed on YouTube in an [AI 101 YouTube Playlist](https://yo
 
 ## Topics
 
+_Click the topic name to go to an index page for that topic._
+
 - [[Midjourney]] - a very good image generator
 - [[Obsidian+Git]] - useful for GPT makers and ChatGPT users
 - [[API]] - an API is used by computer systems to exchange data and perform operations, and can be used by GPTs
