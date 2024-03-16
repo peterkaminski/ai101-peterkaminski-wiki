@@ -61,6 +61,22 @@ _Click the topic name to go to an index page for that topic._
 - [[Python]] - a popular programming language (sometimes knowing a little about it is helpful for AI stuff)
 - [[Upcoming Topics]] - topics that don't have their own pages yet
 
+## Helping Maintain This Website
+
+You can help maintain this website! Send Pete your GitHub account handle (or ask him how to set one up): [[Contact Peter Kaminski]].
+
+Then the typical tools to use are:
+
+- Command line on your computer (Terminal on Mac, Command Prompt or PowerShell on Windows)
+- Git
+- Obsidian
+- Git plugin for Obsidian
+- gh, then `gh auth login`
+
+Those are listed in rough order of setup/install. Once set up, most of the work is handled within Obsidian.
+
+We'll have more comprehensive setup instructions on this website soon.
+
 ## Other Resources
 
 - Pete has additional tutorial videos in the [[Path Shift People Store]]. Prices vary, from $0 and up.
