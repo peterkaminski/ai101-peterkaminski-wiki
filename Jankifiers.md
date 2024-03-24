@@ -2,12 +2,14 @@
 
 Jankifiers are small, self-contained HTML files that help you create and modify ("jankify") prompts for AI, especially AI image generators. The first versions look dorky but do the job. Play with these! Write your own! Send comments or new jankifiers to [Pete](mailto:kaminski@istori.com)!
 
+Jankifiers were introduced on the Learn and Do with Peter, 2024-03-24 call (page and recording forthcoming).
+
 ## Usable Jankifiers
 
 - [[commifier.html]] - v1.0.1 - adds commas randomly
 - [[essifier-es.html]] - v1.0.1 - adds "es" suffix to each word
 - [[essifier.html]] - v1.0.1 - adds "s" suffix to each word (not very interesting)
-- [[interleaver.html]] - v1.0.1 - interleaves two prompts word-by-word (like cars doing a zipper merge)
+- [[interleaver.html]] - v1.0.2 - interleaves two prompts word-by-word (like cars doing a zipper merge)
 - [[letterrific.html]] - v1.0.0 - add a random letter between each existing character, good with small prompts
 - [[reverse-jankifier.html]] - v1.0.1 - swaps pairs of words
 

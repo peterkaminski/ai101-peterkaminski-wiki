@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Interleaver App v1.0.1</title>
+    <title>Interleaver App v1.0.2</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-  <h1>Interleaver App v1.0.1</h1>
+  <h1>Interleaver App v1.0.2</h1>
     <p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
     <p>Enter text into the two boxes below and click "Interleave" to merge them word by word.</p>
     <label for="text1">Text 1:</label><br>
@@ -58,7 +58,7 @@
         function copyToClipboard() {
             const outputText = document.getElementById('output').textContent;
             navigator.clipboard.writeText(outputText).then(() => {
-                alert('Text copied to clipboard!');
+                // (not particularly useful) alert('Text copied to clipboard!');
             }, (err) => {
                 alert('Failed to copy text: ', err);
             });
