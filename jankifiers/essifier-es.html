@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Essifier ES v1.0.0</title>
+</head>
+<body>
+    <h1>Essifier ES App v1.0.0</h1>
+    <p>Enter text in the box below and click "Essify" to add an "es" to the end of each word.</p>
+    <textarea id="textInput" placeholder="Text 1"></textarea><br>
+    <button id="essifyButton">Essify</button><br>
+    <textarea id="textOutput" placeholder="Output" readonly></textarea><br>
+    <button id="copyButton">Copy to Clipboard</button>
+
+    <script>
+        function essifyText(text) {
+            return text.replace(/\b(\w+)(\W)?/g, (match, word, punct) => word + 'es' + (punct || ''));
+        }
+
+        document.getElementById('essifyButton').addEventListener('click', function() {
+            const inputText = document.getElementById('textInput').value;
+            const essifiedText = essifyText(inputText);
+            document.getElementById('textOutput').value = essifiedText;
+        });
+
+        document.getElementById('copyButton').addEventListener('click', function() {
+            const outputText = document.getElementById('textOutput');
+            outputText.select();
+            document.execCommand('copy');
+        });
+    </script>
+
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+
+</body>
+</html>

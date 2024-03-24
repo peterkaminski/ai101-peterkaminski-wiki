@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interleaver App v1.0.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            white-space: pre-line; /* Ensures that the line breaks are preserved in the output */
+        }
+    </style>
+</head>
+<body>
+    <h1>Interleaver App v1.0.0</h1>
+    <p>Enter text into the two boxes below and click "Interleave" to merge them word by word.</p>
+    <label for="text1">Text 1:</label><br>
+    <textarea id="text1" rows="4" cols="50"></textarea><br>
+    <label for="text2">Text 2:</label><br>
+    <textarea id="text2" rows="4" cols="50"></textarea><br>
+    <button onclick="interleaveText()">Interleave</button>
+    <button onclick="copyToClipboard()">Copy to Clipboard</button>
+    <div id="output"></div>
+
+    <script>
+        function interleaveText() {
+            const text1 = document.getElementById('text1').value.trim().split(/\s+/);
+            const text2 = document.getElementById('text2').value.trim().split(/\s+/);
+            let result = '';
+
+            for (let i = 0, j = 0; i < text1.length || j < text2.length; i++, j++) {
+                if (i < text1.length) {
+                    result += text1[i] + ' ';
+                }
+                if (j < text2.length) {
+                    result += text2[j] + ' ';
+                }
+            }
+
+            const outputElement = document.getElementById('output');
+            outputElement.textContent = result.trim();
+
+            // Clear the input textareas after interleaving
+            document.getElementById('text1').value = '';
+            document.getElementById('text2').value = '';
+        }
+
+        function copyToClipboard() {
+            const outputText = document.getElementById('output').textContent;
+            navigator.clipboard.writeText(outputText).then(() => {
+                alert('Text copied to clipboard!');
+            }, (err) => {
+                alert('Failed to copy text: ', err);
+            });
+        }
+    </script>
+
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Jankifier v1.0.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: small;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reverse Jankifier v1.0.0</h1>
+    <p>Enter text in the box below and click "Reverse Jankify" to reverse pairs of words and double the last word if necessary.</p>
+    <textarea id="text1" rows="4" cols="50"></textarea>
+    <br>
+    <button onclick="reverseJankify()">Reverse Jankify</button>
+    <div id="output"></div>
+
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+
+    <script>
+        function reverseJankify() {
+            let inputText = document.getElementById('text1').value.trim();
+            let words = inputText.split(/\s+/);
+
+            // Processing for odd number of words - doubling the last word
+            if (words.length % 2 !== 0) {
+                words.push(words[words.length - 1]);
+            }
+
+            // Swapping pairs of words
+            for (let i = 0; i < words.length; i += 2) {
+                [words[i], words[i + 1]] = [words[i + 1], words[i]];
+            }
+
+            let outputText = words.join(' ');
+            document.getElementById('output').textContent = outputText;
+        }
+    </script>
+</body>
+</html>

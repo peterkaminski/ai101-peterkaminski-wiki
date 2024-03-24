@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Commifier v1.0.0</title>
+    <script>
+        function commify() {
+            // Get the input text
+            var inputText = document.getElementById('text1').value;
+
+            // Split the text into words
+            var words = inputText.split(' ');
+
+            // Initialize variables
+            var outputText = '';
+            var count = 0;
+
+            // Iterate over the words
+            for (var i = 0; i < words.length; i++) {
+                outputText += words[i] + ' ';
+
+                // Randomly decide to insert a comma after 2-4 words
+                count++;
+                if (count >= 2 && Math.random() < 0.5 || count >= 4) {
+                    outputText += ', ';
+                    count = 0;
+                }
+            }
+
+            // Remove the last comma and space, if any
+            outputText = outputText.replace(/, $/, '');
+
+            // Display the output
+            document.getElementById('output').textContent = outputText;
+        }
+    </script>
+</head>
+<body>
+    <h1>Commifier v1.0.0</h1>
+    <p>Enter text in the box below and click "Commify" to insert commas randomly between every 2-4 words.</p>
+    
+    <textarea id="text1" rows="4" cols="50"></textarea>
+    <br>
+    <button onclick="commify()">Commify</button>
+    
+    <h2>Output</h2>
+    <div id="output" style="white-space: pre-wrap; border: 1px solid #ccc; padding: 10px;"></div>
+
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+
+</body>
+</html>
