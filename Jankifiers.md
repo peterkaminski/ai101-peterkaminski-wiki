@@ -10,7 +10,7 @@ Jankifiers are small, self-contained HTML files that help you create and modify 
 
 Each of these rough versions was created by ChatGPT by giving it a short prompt (see example below). We'll continue to add, improve, or perhaps even retire particular jankifiers without notice, except for posting them here.
 
-Each single, self-contained HTML file can be used on the web, or saved to your computer or smartphone and used from there. We'll add more explanation later, but to start, you can just click on one of the links below, then do what the web page tells you -- add some text somewhere, click a button, copy the resulting text, then go over to your image generator and paste the text.
+Each single, self-contained HTML file can be used on the web, or saved to your computer or smartphone and used from there. We'll add more explanation later, but to start, you can just click on one of the links above, then do what the web page tells you -- add some text somewhere, click a button, copy the resulting text, then go over to your image generator and paste the text.
 
 The authors (Peter Kaminski and/or others)  of the jankifiers you use can't help you with your image generator, and isn't responsible for your use or misuse of the tool, including problems caused by the text you copy and paste. What you do with these is your responsibility. Read the included or linked MIT License for more information.
 
