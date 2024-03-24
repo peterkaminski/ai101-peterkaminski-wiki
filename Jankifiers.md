@@ -6,7 +6,7 @@ Jankifiers are small, self-contained HTML files that help you create and modify 
 - [[essifier-es.html]] - v1.0.1 - adds "es" suffix to each word
 - [[essifier.html]] - v1.0.1 - adds "s" suffix to each word (not very interesting)
 - [[interleaver.html]] - v1.0.1 - interleaves two prompts word-by-word (like cars doing a zipper merge)
-- [[reverse-jankify.html]] - v1.0.1 - swaps pairs of words
+- [[reverse-jankifier.html]] - v1.0.1 - swaps pairs of words
 
 Each of these rough versions was created by ChatGPT by giving it a short prompt (see example below). The idea is to democratize the creation of little utilities like this, and with a good LLM, you can do it even if you're not a programmer!
 
