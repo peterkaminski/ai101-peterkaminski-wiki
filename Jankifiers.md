@@ -8,6 +8,7 @@ Jankifiers are small, self-contained HTML files that help you create and modify 
 - [[essifier-es.html]] - v1.0.1 - adds "es" suffix to each word
 - [[essifier.html]] - v1.0.1 - adds "s" suffix to each word (not very interesting)
 - [[interleaver.html]] - v1.0.1 - interleaves two prompts word-by-word (like cars doing a zipper merge)
+- [[letterrific.html]] - v1.0.0 - add a random letter between each existing character, good with small prompts
 - [[reverse-jankifier.html]] - v1.0.1 - swaps pairs of words
 
 ## Pre-release Jankifiers
@@ -26,7 +27,39 @@ Each single, self-contained HTML file can be used on the web, or saved to your c
 
 The authors (Peter Kaminski and/or others)  of these jankifiers can't help you with your image generator, and are not responsible for your use or misuse of the jankifiers, including problems caused by the text you copy and paste. What you do with these is your responsibility. Read the included and linked [MIT License](https://opensource.org/license/MIT) for more information.
 
-## Interleaver Prompt
+## Sample Jankifier Creation Prompts
+
+## Letteriffic
+
+_A slightly cleaner prompt than the Interleaver prompt below. Also includes version number and copyright info, which makes this prompt a little harder to read. Forgot to include the link to the Jankifier page._
+
+Write a single HTML file that includes JavaScript. Use the title "Letteriffic v1.0.0".
+
+Accept a text input. When the user presses the "Letterify" button, add a random letter between all the existing letters. Display the result in an output area, and copy the result to the clipboard. Provide a separate button "Copy to Clipboard" which copies the result to the clipboard.
+
+Add this text to the top of the file:
+
+<!--   
+    Copyright © 2024 Peter Kaminski  
+    Licensed under the MIT License  
+    https://ai101.peterkaminski.wiki/jankifiers  
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/  
+-->  
+
+Add a sentence of instructions to the page before the input areas.
+
+Add this text at the bottom of the page:
+
+```
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+```
+
+Before you write the HTML file, do you have any clarifying questions for me?
+
+## Interleaver
 
 _This is an example prompt for GPT-4, which generated the original Interleaver. Copy and modify it, then give it to ChatGPT or other LLM to make your own jankifier! Send your jankifiers to [Pete](mailto:kaminski@istori.com) if you'd like to have them listed here._
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Letterrific v1.0.0</title>
+    <script>
+        function letterifyText() {
+            const inputText = document.getElementById('inputText').value;
+            let result = '';
+
+            for (let i = 0; i < inputText.length; i++) {
+                result += inputText[i];
+                if (i < inputText.length - 1) {
+                    // Add a random letter between existing letters
+                    const randomLetter = String.fromCharCode(97 + Math.floor(Math.random() * 26));
+                    result += randomLetter;
+                }
+            }
+
+            document.getElementById('outputText').value = result;
+            copyToClipboard(result);
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                console.log('Text copied to clipboard');
+            }).catch(err => {
+                console.error('Failed to copy text to clipboard', err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Letterrific v1.0.0</h1>
+    <p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+    <p>Enter text below and click "Letterify" to add a random letter between each existing character. Result is copied to the clipboard, or click the button to copy to clipboard.</p>
+
+    <input type="text" id="inputText" size="50" placeholder="Enter text here">
+    <button onclick="letterifyText()">Letterify</button>
+    <button onclick="copyToClipboard(document.getElementById('outputText').value)">Copy Result to Clipboard</button>
+
+    <p>&nbsp;</p>
+
+    <textarea id="outputText" readonly style="width: 100%; height: 100px;"></textarea>
+
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+</body>
+</html>
