@@ -16,6 +16,9 @@ Click on the name of a session to go to that session's web page.
 
 ### March 2024
 
+- [[Learn and Do with Peter, 2024-03-24]]
+- [[Learn and Do with Peter, 2024-03-16]]
+- [[Learn and Do with Peter, 2024-03-15]]
 - [[Learn and Do with Peter, 2024-03-10]] - Our own LLM front-end, Salamander
 - [[Learn and Do with Peter, 2024-03-09]] - Why (or why not) to build our own LLM front-end
 - [[AI 101 Live Session, 2024-03-02]] - Markdown, Obsidian install and first steps
@@ -57,6 +60,7 @@ _Click the topic name to go to an index page for that topic._
 
 - [[Midjourney]] - a very good image generator
 - [[Obsidian+Git]] - useful for GPT makers and ChatGPT users
+- [[Jankifiers]] - web pages that can "jankify" text, such as prompts for AI
 - [[API]] - an API is used by computer systems to exchange data and perform operations, and can be used by GPTs
 - [[Python]] - a popular programming language (sometimes knowing a little about it is helpful for AI stuff)
 - [[Upcoming Topics]] - topics that don't have their own pages yet
