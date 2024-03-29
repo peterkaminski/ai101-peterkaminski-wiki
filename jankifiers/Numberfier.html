@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word to Number Converter</title>
+    <script>
+        function replaceWordsWithNumbers() {
+            const inputText = document.getElementById('inputText').value;
+            const words = inputText.split(/\s+/); // Split the text into words
+            const result = words.map(word => {
+                // Randomly decide whether to replace a word with a number
+                if (Math.random() > 0.5) {
+                    return Math.floor(Math.random() * 100); // Replace with a random number
+                } else {
+                    return word; // Keep the original word
+                }
+            }).join(' ');
+
+            document.getElementById('outputText').textContent = result;
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(result)
+                .then(() => console.log('Text copied to clipboard'))
+                .catch(err => console.error('Failed to copy text to clipboard', err));
+        }
+    </script>
+</head>
+<body>
+    <h1>Word to Number Converter</h1>
+    <p>Inspired by Peter Kaminski's <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">Jankifiers.</a></p>
+    <p>Enter text below and click "Convert" to change random words into numbers. The new text will automatically be added to your clipboard.</p>
+
+    <textarea id="inputText" rows="4" cols="50" placeholder="Enter text here"></textarea><br>
+    <button onclick="replaceWordsWithNumbers()">Convert</button>
+
+    <h2>Converted Text</h2>
+    <p id="outputText" style="margin-top: 20px;"></p>
+    <div class="footer">
+        <p>&copy; 2024 Vikki Baptiste</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+</body>
+</html>
