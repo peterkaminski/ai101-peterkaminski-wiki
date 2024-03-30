@@ -1,6 +1,7 @@
 # AI Topics
 
-[[Top AIs]]  
+[[Jankifiers]]  
+[[Top AIs]] (wip)  
 # Site Navigation
 
 [[README|Home]]  

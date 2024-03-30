@@ -16,7 +16,8 @@ Click on the name of a session to go to that session's web page.
 
 ### March 2024
 
-- [[Learn and Do with Peter, 2024-03-24]]
+- [[Learn and Do with Peter, 2024-03-29]] - Jankifiers in more depth
+- [[Learn and Do with Peter, 2024-03-24]] - Jankifiers introduced (but not called as such)
 - [[Learn and Do with Peter, 2024-03-16]]
 - [[Learn and Do with Peter, 2024-03-15]]
 - [[Learn and Do with Peter, 2024-03-10]] - Our own LLM front-end, Salamander
