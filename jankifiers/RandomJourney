@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RandomJourney</title>
+    <script>
+        function enhancePrompt() {
+            const basePrompt = document.getElementById('basePrompt').value;
+
+            // Randomly generate values within the specified ranges
+            const stylizeValue = Math.floor(Math.random() * 1001); // 0 to 1000
+            const chaosValue = Math.floor(Math.random() * 101); // 0 to 100
+            const weirdValue = Math.floor(Math.random() * 3001); // 0 to 3000
+
+            // Construct the enhanced prompt
+            const enhancedPrompt = `${basePrompt} --stylize ${stylizeValue} --chaos ${chaosValue} --weird ${weirdValue}`;
+
+            document.getElementById('outputPrompt').textContent = enhancedPrompt;
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(enhancedPrompt)
+                .then(() => console.log('Prompt copied to clipboard'))
+                .catch(err => console.error('Failed to copy prompt to clipboard', err));
+        }
+    </script>
+</head>
+<body>
+    <h1>RandomJourney</h1>
+    <p>Inspired by Peter Kaminski's <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">Jankifiers.</a></p>
+    <p>This Jankifier randomizes the stylize, chaos, and weird values of your prompt, and saves the prompt to your clipboard.</p>
+    <p>More of a randomizer than a jankifier!</p>
+    <textarea id="basePrompt" rows="2" cols="50" placeholder="Enter your base prompt here"></textarea><br>
+    <button onclick="enhancePrompt()">Randomize my prompt</button>
+    <p id="outputPrompt" style="margin-top: 20px;"></p>
+
+    <div class="footer">
+        <p>&copy; 2024 Vikki Baptiste</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+</body>
+</html>
