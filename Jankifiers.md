@@ -1,23 +1,30 @@
 # Jankifiers
 
-Jankifiers are small, self-contained HTML files that help you create and modify ("jankify") prompts for AI, especially AI image generators. The first versions look dorky but do the job. Play with these! Write your own! Send comments or new jankifiers to [Pete](mailto:kaminski@istori.com)!
+Jankifiers are small tools written in HTML and JavaScript (often by an LLM like ChatGPT, with guidance from a human).
 
-Jankifiers were introduced on the Learn and Do with Peter, 2024-03-24 call (page and recording forthcoming).
+The first jankifiers we've written are used to create and modify ("jankify") prompts for AI, especially AI image generators.
+
+The first versions look janky but do the job. Play with these! Write your own! Send comments or new jankifiers to [Pete](mailto:kaminski@istori.com)!
+
+Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call.
 
 ## Usable Jankifiers
 
-- [[commifier.html]] - v1.0.1 - adds commas randomly
-- [[essifier-es.html]] - v1.0.1 - adds "es" suffix to each word
-- [[essifier.html]] - v1.0.1 - adds "s" suffix to each word (not very interesting)
-- [[interleaver.html]] - v1.0.2 - interleaves two prompts word-by-word (like cars doing a zipper merge)
-- [[letterrific.html]] - v1.0.0 - add a random letter between each existing character, good with small prompts
-- [[reverse-jankifier.html]] - v1.0.1 - swaps pairs of words
-
+- [[Adjective Adder.html]] - v1.0.0 - adds random outlandish adjectives before each noun
+- [[Commifier.html]] - v1.0.1 - adds commas randomly
+- [[Essifier-es.html]] - v1.0.1 - adds "es" suffix to each word
+- [[Essifier.html]] - v1.0.1 - adds "s" suffix to each word (not very interesting)
+- [[Interleaver.html]] - v1.0.2 - interleaves two prompts word-by-word (like cars doing a zipper merge)
+- [[Letterrific.html]] - v1.0.0 - add a random letter between each existing character, good with small prompts
+- [[Numberfier.html]] - changes random words into numbers
+- [[RandomJourney.html]] - randomizes the stylize, chaos, and weird values of your Midjourney prompt
+- [[Reverse-Jankifier.html]] - v1.0.1 - swaps pairs of words
+- [[WikiWords.html]] - pulls two random sentences from a random Wikipedia article
 ## Pre-release Jankifiers
 
 These are not ready for primetime, but may still be interesting.
 
-- [[dallefier.html]] - v0.0.1 - accepts a text prompt, sends it to OpenAI / DALL-E 3 to generate an image. NOTE: no progress indicator (it will look like nothing is happening for a while while the image is being generated), download is broken (you can still use "Save As" in your browser to save the image), image parameter inputs aren't provided.
+- [[Dallefier.html]] - v0.0.1 - accepts a text prompt, sends it to OpenAI / DALL-E 3 to generate an image. NOTE: no progress indicator (it will look like nothing is happening for a while while the image is being generated), download is broken (you can still use "Save As" in your browser to save the image), image parameter inputs aren't provided.
 
 ## About Jankifiers
 
