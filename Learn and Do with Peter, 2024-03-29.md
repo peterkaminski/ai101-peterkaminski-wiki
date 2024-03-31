@@ -2,7 +2,9 @@
 
 YouTube: <https://www.youtube.com/watch?v=gaRZ5f3GDOM>
 
-Recorded live AI Salon / Learn and Do with Peter session on AI topics. In this episode, we covered [[Jankifiers]].
+Recorded live AI Salon / Learn and Do with Peter session on AI topics.
+
+In this episode, we covered [[Jankifiers]].
 
 **Next:** _link coming soon_
 
