@@ -19,6 +19,7 @@ Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call a
 - [[Numberfier.html]] - changes random words into numbers
 - [[RandomJourney.html]] - randomizes the stylize, chaos, and weird values of your Midjourney prompt
 - [[Reverse-Jankifier.html]] - v1.0.1 - swaps pairs of words
+- [[Reverse Text.html]] - v1.0.0 - reverses the input text character by character
 - [[WikiWords.html]] - pulls two random sentences from a random Wikipedia article
 ## Pre-release Jankifiers
 

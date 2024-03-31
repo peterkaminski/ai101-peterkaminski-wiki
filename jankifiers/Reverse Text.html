@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Text v1.0.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            white-space: pre-line; /* Ensures that the line breaks are preserved in the output */
+        }
+    </style>
+</head>
+<body>
+    <h1>Reverse Text v1.0.0</h1>
+    <p>Enter text into the box below and click "Reverse Text" to reverse the text character by character.</p>
+    <p>The result will be copied to your clipboard when you click "Reverse Text".</p>
+    <textarea id="inputText" rows="4" cols="50"></textarea><br>
+    <button onclick="reverseTextAndCopy()">Reverse Text</button>
+    <div id="output"></div>
+
+    <script>
+        function reverseTextAndCopy() {
+            const input = document.getElementById('inputText').value;
+            const reversed = input.split('').reverse().join('');
+            
+            const outputElement = document.getElementById('output');
+            outputElement.textContent = reversed;
+
+            navigator.clipboard.writeText(reversed).then(() => {
+                // alert('Reversed text copied to clipboard!');
+            }, (err) => {
+                alert('Failed to copy text: ', err);
+            });
+
+            document.getElementById('inputText').value = ''; // Clear the input area after reversing
+        }
+    </script>
+
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+</body>
+</html>
