@@ -1,5 +1,9 @@
 # What's New
 
+_This page is maintained by hand, and it's currently out of date._
+
+_Check [All Pages](/all-pages.html)  for an automated list, and click the column you want to sort by._
+
 ## 2024-02-07
 
 - [[How to use exiftool to retrieve the image prompt from a Midjourney PNG file]]
