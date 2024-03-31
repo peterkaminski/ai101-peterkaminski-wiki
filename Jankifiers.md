@@ -6,7 +6,7 @@ The first jankifiers we've written are used to create and modify ("jankify") pro
 
 The first versions look janky but do the job. Play with these! Write your own! Send comments or new jankifiers to [Pete](mailto:kaminski@istori.com)!
 
-Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call.
+Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call and we did a detailed walkthrough on [[Learn and Do with Peter, 2024-03-29]].
 
 ## Usable Jankifiers
 
