@@ -59,12 +59,14 @@ The videos are also listed on YouTube in an [AI 101 YouTube Playlist](https://yo
 
 _Click the topic name to go to an index page for that topic._
 
+- [[AI 101 Building Blocks]] - where to start from the ground up
 - [[Midjourney]] - a very good image generator
 - [[Obsidian+Git]] - useful for GPT makers and ChatGPT users
 - [[Jankifiers]] - web pages that can "jankify" text, such as prompts for AI
 - [[API]] - an API is used by computer systems to exchange data and perform operations, and can be used by GPTs
 - [[Python]] - a popular programming language (sometimes knowing a little about it is helpful for AI stuff)
 - [[Upcoming Topics]] - topics that don't have their own pages yet
+- [[Resources]] - other highly useful learning materials
 
 ## Helping Maintain This Website
 
