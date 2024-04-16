@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Janky Rhymifier v1.0.0</title>
+    <script>
+        function rhymeIt() {
+            const consonants = 'bcdfghjklmnpqrstvwxyz'.split('');
+            const text = document.getElementById('inputText').value;
+            const words = text.split(/\s+/);
+
+            // Change about half of the words at random
+            const countToRhyme = Math.floor(words.length / 2);
+            const indicesToRhyme = new Set();
+            while (indicesToRhyme.size < countToRhyme) {
+                const randomIndex = Math.floor(Math.random() * words.length);
+                indicesToRhyme.add(randomIndex);
+            }
+
+            // Generate rhymes by changing the initial consonant sound
+            const rhymedWords = words.map((word, index) => {
+                if (indicesToRhyme.has(index)) {
+                    const firstVowelIndex = word.search(/[aeiou]/i);
+                    if (firstVowelIndex > 0) {
+                        const randomConsonant = consonants[Math.floor(Math.random() * consonants.length)];
+                        return randomConsonant + word.substring(firstVowelIndex);
+                    }
+                }
+                return word;
+            });
+
+            const rhymedText = rhymedWords.join(' ');
+            document.getElementById('outputText').textContent = rhymedText;
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(rhymedText);
+        }
+    </script>
+</head>
+<body>
+    <h1>Janky Rhymifier v1.0.0</h1>
+    <p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+    <p>Enter text into the box below and click "Rhyme It!" to change some words into janky rhymes of the original word. Click again to re-shuffle. The result is automatically copied to the clipboard.</p>
+    <textarea id="inputText" rows="4" cols="50"></textarea><br>
+    <button onclick="rhymeIt()">Rhyme It!</button>
+    <div id="outputText"></div>
+</body>
+
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+
+</html>

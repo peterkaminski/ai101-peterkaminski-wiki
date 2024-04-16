@@ -11,16 +11,20 @@ Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call a
 ## Usable Jankifiers
 
 - [[Adjective Adder.html]] - v1.0.0 - adds random outlandish adjectives before each noun
+- [[Adverbifier.html]] - v1.0.0 - adds some random adverbs
 - [[Commifier.html]] - v1.0.1 - adds commas randomly
 - [[Essifier-es.html]] - v1.0.1 - adds "es" suffix to each word
 - [[Essifier.html]] - v1.0.1 - adds "s" suffix to each word (not very interesting)
 - [[Interleaver.html]] - v1.0.2 - interleaves two prompts word-by-word (like cars doing a zipper merge)
+- [[Janky Rhymifier.html]] - v1.0.0 - changes some words into janky rhymes of the original word
 - [[Letterrific.html]] - v1.0.0 - add a random letter between each existing character, good with small prompts
 - [[Numberfier.html]] - changes random words into numbers
 - [[RandomJourney.html]] - randomizes the stylize, chaos, and weird values of your Midjourney prompt
-- [[Reverse-Jankifier.html]] - v1.0.1 - swaps pairs of words
 - [[Reverse Text.html]] - v1.0.0 - reverses the input text character by character
+- [[Reverse-Jankifier.html]] - v1.0.1 - swaps pairs of words
+- [[Sortor.html]] - v1.0.0 - Alphabetically sorts the letters in each word
 - [[WikiWords.html]] - pulls two random sentences from a random Wikipedia article
+
 ## Pre-release Jankifiers
 
 These are not ready for primetime, but may still be interesting.

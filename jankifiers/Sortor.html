@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sortor v1.0.0</title>
+    <script>
+        function sortWords() {
+            // Get input text
+            const inputText = document.getElementById('inputText').value;
+
+            // Split input text into words and sort each word individually
+            const sortedWords = inputText.split(' ')
+                                         .map(word => word.split('').sort().join(''))
+                                         .join(' ');
+
+            // Display sorted text
+            document.getElementById('output').textContent = sortedWords;
+
+            // Copy sorted text to clipboard
+            navigator.clipboard.writeText(sortedWords).then(() => {
+                console.log('Text copied to clipboard');
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Sortor v1.0.0</h1>
+    <p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+    <p>Enter text into the box below and click "Sort" to alphabetically sort the letters in each word. The result is automatically copied to the clipboard.</p>
+    <textarea id="inputText" placeholder="Enter text here..."></textarea>
+    <br>
+    <button onclick="sortWords()">Sort</button>
+    <div id="output"></div>
+
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+
+</body>
+</html>

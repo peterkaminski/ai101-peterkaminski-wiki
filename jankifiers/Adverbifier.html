@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adverbifier v1.0.0</title>
+    <script>
+        function adverbify() {
+            const adverbs = ['quickly', 'softly', 'loudly', 'proudly', 'suddenly',
+                             'eagerly', 'slowly', 'gently', 'happily', 'sadly', 'quirkly'];
+            let inputText = document.getElementById('inputText').value;
+            let words = inputText.split(' ');
+            const numberOfAdverbs = Math.floor(Math.random() * 6) + 5; // 5 to 10 adverbs
+
+            for (let i = 0; i < numberOfAdverbs; i++) {
+                if (words.length > 1) {
+                    const randomIndex = Math.floor(Math.random() * words.length);
+                    const randomAdverb = adverbs[Math.floor(Math.random() * adverbs.length)];
+                    words.splice(randomIndex, 0, randomAdverb);
+                }
+            }
+
+            const outputText = words.join(' ');
+            document.getElementById('outputDiv').innerText = outputText;
+
+            navigator.clipboard.writeText(outputText)
+                .then(() => console.log("Text copied to clipboard"))
+                .catch(err => console.error("Failed to copy text: ", err));
+        }
+    </script>
+</head>
+<body>
+    <h1>Adverbifier v1.0.0</h1>
+    <p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+    <p>Enter text into the box below and click "Adverb It!" to insert some random adverbs. Click again to re-shuffle. The result is automatically copied to the clipboard.</p>
+    <textarea id="inputText" rows="4" cols="50"></textarea><br>
+    <button onclick="adverbify()">Adverb It!</button>
+    <div id="outputDiv" style="margin-top: 20px; border: 1px solid black; min-height: 50px; padding: 10px;"></div>
+
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+
+</body>
+</html>
