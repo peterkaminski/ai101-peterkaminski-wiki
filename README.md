@@ -14,6 +14,8 @@ The sessions listed below have pages on this website with a link to the recordin
 
 Click on the name of a session to go to that session's web page.
 
+There is also a hand-maintained list of [[Live Session Notes]].
+
 ### March 2024
 
 - [[Learn and Do with Peter, 2024-03-29]] - Jankifiers in more depth
