@@ -32,7 +32,7 @@ function raccoonifyText() {
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
-        alert('Raccoonified text has been copied to clipboard!');
+        // alert('Raccoonified text has been copied to clipboard!');
     }, (err) => {
         console.error('Failed to copy text: ', err);
     });
