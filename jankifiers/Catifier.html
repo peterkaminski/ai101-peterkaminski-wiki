@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Claire Jacobs
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Catifier Text Processor v1.0.0</title>
+<script>
+function catifyText() {
+    var inputText = document.getElementById('inputText').value;
+    var words = inputText.split(' ');
+    var catNames = ["Persian", "Maine Coon", "Siamese", "Tabby", "Sphinx", "Misty", "Shadow", "Tiger", "Oscar", "Whiskers"];
+    
+    // Replace every 2nd word with a cat name or breed
+    for (var i = 1; i < words.length; i += 2) {
+        words[i] = catNames[Math.floor(Math.random() * catNames.length)];
+    }
+    
+    var processedText = words.join(' ');
+    
+    // Display the processed text
+    document.getElementById('outputText').textContent = processedText;
+    
+    // Copy the processed text to the clipboard
+    navigator.clipboard.writeText(processedText);
+}
+</script>
+</head>
+<body>
+<h1>Catifier Text Processor v1.0.0</h1>
+<p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+<p>Enter text into the box below and click the Catifier Button to catify your text!</p>
+<label for="inputText">Enter some text:</label>
+<input type="text" id="inputText" name="inputText"><br><br>
+<button onclick="catifyText()">CATIFIER BUTTON</button><br><br>
+<h2>Processed Text:</h2>
+<div id="outputText"></div>
+
+<div class="footer">
+    <p>&copy; 2024 Claire Jacobs</p>
+    <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+</div>
+
+</body>
+</html>
