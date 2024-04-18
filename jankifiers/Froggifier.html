@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Daniele Hall
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Froggify Text v1.0.0</title>
+<script>
+function froggifyText() {
+    const frogWords = ["ribbit", "tadpole", "pond", "croak", "lily pad", "hop", "amphibian"];
+    const userInput = document.getElementById("userInput").value;
+    const words = userInput.split(/\s+/);
+    const result = words.map((word, index) => {
+        // Randomly decide to froggify about half of the words
+        if (Math.random() > 0.5) {
+            const frogWord = frogWords[Math.floor(Math.random() * frogWords.length)];
+            return word + ' ' + frogWord;
+        } else {
+            return word;
+        }
+    }).join(' ');
+
+    // Display the result
+    document.getElementById("result").textContent = result;
+
+    // Copy the result to the clipboard
+    navigator.clipboard.writeText(result);
+}
+</script>
+</head>
+<body>
+<h1>Froggify Your Text! v1.0.0</h1>
+<p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+<p>Enter text into the box below and click "Froggify".</p>
+<textarea id="userInput" rows="5" cols="50" placeholder="Enter your text here..."></textarea><br>
+<button onclick="froggifyText()">Froggify</button>
+<h2>Modified Text:</h2>
+<p id="result"></p>
+
+<div class="footer">
+    <p>&copy; 2024 Daniele Hall</p>
+    <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+</div>
+
+</body>
+</html>

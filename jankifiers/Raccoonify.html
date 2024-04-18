@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Raccoonify Your Text! v1.0.0</title>
+<script>
+function raccoonifyText() {
+    const raccoonWords = ["mask", "nocturnal", "scavenger", "clever", "bandit", "omnivore", "paws"];
+    let userInput = document.getElementById("userInput").value;
+    let words = userInput.split(/\s+/);
+    let raccoonifiedText = [];
+
+    words.forEach((word, index) => {
+        raccoonifiedText.push(word);
+        // Insert a raccoon word after about every other word
+        if (index % 2 === 1) {
+            let randomRaccoonWord = raccoonWords[Math.floor(Math.random() * raccoonWords.length)];
+            raccoonifiedText.push(randomRaccoonWord);
+        }
+    });
+
+    let outputText = raccoonifiedText.join(" ");
+    document.getElementById("output").innerText = outputText;
+    copyToClipboard(outputText);
+}
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        alert('Raccoonified text has been copied to clipboard!');
+    }, (err) => {
+        console.error('Failed to copy text: ', err);
+    });
+}
+</script>
+</head>
+<body>
+<h1>Raccoonify Your Text! v1.0.0</h1>
+<p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+<p>Enter text into the box below and click the Raccoonify Button to raccoonify your text!</p>
+<textarea id="userInput" rows="4" cols="50" placeholder="Enter your text here..."></textarea><br>
+<button onclick="raccoonifyText()">Raccoonify Button</button>
+<h2>Output</h2>
+<p id="output"></p>
+
+<div class="footer">
+    <p>&copy; 2024 Cyndi Coon</p>
+    <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+</div>
+
+</body>
+</html>
