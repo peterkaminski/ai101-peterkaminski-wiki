@@ -6,6 +6,10 @@ The first jankifiers we've written are used to create and modify ("jankify") pro
 
 The first versions look janky but do the job. Play with these! Write your own! Send comments or new jankifiers to [Pete](mailto:kaminski@istori.com)!
 
+To make your own, put a prompt like this into ChatGPT or another chatbot (replace the ALL CAPS phrases):
+
+> Write a single html file with javascript. Let the user enter some text. When the user presses the "YOUR BUTTON NAME HERE" button, WHAT YOU WANT TO HAPPEN. Display the output and copy it to the clipboard. Don't show an alert. Let me download the html file.
+
 Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call and we did a detailed walkthrough on [[Learn and Do with Peter, 2024-03-29]].
 
 ## Usable Jankifiers
@@ -15,10 +19,12 @@ Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call a
 - [[Commifier.html]] - v1.0.1 - adds commas randomly
 - [[Essifier-es.html]] - v1.0.1 - adds "es" suffix to each word
 - [[Essifier.html]] - v1.0.1 - adds "s" suffix to each word (not very interesting)
+- [[Froggifier.html]] - v1.0.0 - froggifies your text
 - [[Interleaver.html]] - v1.0.2 - interleaves two prompts word-by-word (like cars doing a zipper merge)
 - [[Janky Rhymifier.html]] - v1.0.0 - changes some words into janky rhymes of the original word
 - [[Letterrific.html]] - v1.0.0 - add a random letter between each existing character, good with small prompts
 - [[Numberfier.html]] - changes random words into numbers
+- [[Raccoonify.html]] - v1.0.0 - raccoonifies your text
 - [[RandomJourney.html]] - randomizes the stylize, chaos, and weird values of your Midjourney prompt
 - [[Reverse Text.html]] - v1.0.0 - reverses the input text character by character
 - [[Reverse-Jankifier.html]] - v1.0.1 - swaps pairs of words
