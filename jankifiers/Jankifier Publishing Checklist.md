@@ -6,6 +6,8 @@ You can edit your jankifier file by hand. Or, if you copy the following instruct
 
 Remember to change the things that are in ALL CAPS. Note that you change YOUR NAME in two places.
 
+You can leave number 5 the way it is, or you can add a sentence or two describing your jankifier and how to use it, to make it easier for the LLM to get it right.
+
 Remember to ask to let you download the new HTML file.
 
 ---
