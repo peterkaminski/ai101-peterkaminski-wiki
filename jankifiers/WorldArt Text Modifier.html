@@ -32,8 +32,8 @@
     }
     function copyToClipboard(text) {
         navigator.clipboard.writeText(text).then(function() {
-            // console.log('Copying to clipboard was successful!');
-            alert('Text copied to clipboard!');
+            console.log('Copying to clipboard was successful!');
+            // alert('Text copied to clipboard!');
         }, function(err) {
             console.error('Could not copy text: ', err);
             alert('Failed to copy text. Please try again.');
