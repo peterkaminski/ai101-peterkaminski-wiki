@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+    Copyright © 2024 Paul Titangos
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WorldArt Text Modifier v1.0.0</title>
+<script>
+    function replaceWithArtWords(text) {
+        const artWords = ["abstract", "baroque", "cubism", "dada", "expressionism", "fauvism", "gothic", "hyperrealism", "impressionism", "juxtapose", "kinetic", "minimalism", "neoclassicism", "op art", "pop art", "quattrocento", "romanticism", "surrealism", "tachism", "ukiyo-e", "vorticism", "woodblock", "xilography", "youth style", "zen art", "art nouveau", "art deco", "byzantine", "constructivism", "de stijl"];
+        const words = text.split(/\s+/);
+        const numberOfArtWords = Math.ceil(words.length / 3); // Adjusted to add more art words
+        let indicesUsed = new Set();
+        while (indicesUsed.size < numberOfArtWords) {
+            let randomIndex = Math.floor(Math.random() * words.length);
+            if (!indicesUsed.has(randomIndex)) {
+                words[randomIndex] = artWords[Math.floor(Math.random() * artWords.length)];
+                indicesUsed.add(randomIndex);
+            }
+        }
+        return words.join(" ");
+    }
+    function processText() {
+        const userInput = document.getElementById("userInput").value;
+        const artText = replaceWithArtWords(userInput);
+        document.getElementById("output").textContent = artText;
+        copyToClipboard(artText);
+    }
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(function() {
+            // console.log('Copying to clipboard was successful!');
+            alert('Text copied to clipboard!');
+        }, function(err) {
+            console.error('Could not copy text: ', err);
+            alert('Failed to copy text. Please try again.');
+        });
+    }
+</script>
+</head>
+<body>
+<h1>WorldArt Text Modifier v1.0.0</h1>
+<p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+<p>This tool modifies your text to include world art-related terms. Enter your text and then press the &quot;WorldArt&quot; button.</p>
+<h2>WorldArt Text Modifier</h2>
+<textarea id="userInput" rows="4" cols="50" placeholder="Enter your text here..."></textarea><br>
+<button onclick="processText()">WorldArt</button>
+<h3>Modified Text:</h3>
+<p id="output" style="white-space: pre-wrap;"></p>
+
+    <div class="footer">
+        <p>&copy; 2024 Paul Titangos</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+</body>
+</html>

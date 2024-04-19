@@ -35,6 +35,7 @@ Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call a
 - [[Reverse-Jankifier.html]] - v1.0.1 - swaps pairs of words
 - [[Sortor.html]] - v1.0.0 - Alphabetically sorts the letters in each word
 - [[WikiWords.html]] - pulls two random sentences from a random Wikipedia article
+- [[WorldArt Text Modifier.html]] - modifies your text to include world art-related terms
 
 ## Pre-release Jankifiers
 
