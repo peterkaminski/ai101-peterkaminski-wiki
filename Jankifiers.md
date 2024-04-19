@@ -10,6 +10,10 @@ To make your own, put a prompt like this into ChatGPT or another chatbot (replac
 
 > Write a single html file with javascript. Let the user enter some text. When the user presses the "YOUR BUTTON NAME HERE" button, WHAT YOU WANT TO HAPPEN. Display the output and copy it to the clipboard. Don't show an alert. Let me download the html file.
 
+To publish your jankifier on the web, either on your website or this one, you should add a copyright notice for attribution, a version number so people know if the copy they might have is out of date, and an open source dedication if you're okay with that.
+
+Check out the [[Jankifier Publishing Checklist]] for detailed instructions.
+
 Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call and we did a detailed walkthrough on [[Learn and Do with Peter, 2024-03-29]].
 
 ## Usable Jankifiers
