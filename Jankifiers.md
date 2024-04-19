@@ -12,7 +12,7 @@ To make your own, put a prompt like this into ChatGPT or another chatbot (replac
 
 To publish your jankifier on the web, either on your website or this one, you should add a copyright notice for attribution, a version number so people know if the copy they might have is out of date, and an open source dedication if you're okay with that.
 
-Check out the [[Jankifier Publishing Checklist]] for detailed instructions.
+Check out the [[Jankifier Publishing Checklist]] for detailed instructions. Do "view source" on any of the jankifiers below to see live examples.
 
 Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call and we did a detailed walkthrough on [[Learn and Do with Peter, 2024-03-29]].
 
