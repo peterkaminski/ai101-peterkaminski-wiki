@@ -2,27 +2,25 @@
 
 To be published here, jankifiers should have the following.
 
-You can edit your jankifier file by hand. Or, if you copy the following instructions and example text into your favorite LLM and attach your jankifier HTML file, your LLM may be able to edit the file for you.
+You can edit your jankifier file by hand. Or, you can copy the following instructions and text snippets into your favorite LLM and attach your jankifier HTML file, and your LLM may be able to edit the file for you.
 
-Remember to change the things that are in ALL CAPS. Note that you change YOUR NAME in two places.
+Remember to change the things that are in ALL CAPS. Note that you need to change YOUR NAME in two places.
 
-You can leave number 5 the way it is, or you can add a sentence or two describing your jankifier and how to use it, to make it easier for the LLM to get it right.
+You can leave number 5 the way it is, or to make it easier for the LLM to get it right, you can add a sentence or two describing your jankifier and how to use it.
 
-Remember to ask to let you download the new HTML file.
+## Instructions
 
----
-
-Please make the following changes to the attached HTML file:
+Read these instructions and text snippets. Make the following changes to the attached HTML file. Let me download the updated HTML file.
 
 1. Confirm that `<!DOCTYPE html>` is the first line. Delete blank lines before it.
-2. Copyright notice in an HTML comment directly after that.
-3. `<title>` and `<h1>` with the name and version, start with "v1.0.0" (and use [semantic versioning](https://semver.org/)). Add the `<h1></h1>` directly after `<body>` if it's not already there.
-4. Right after the `<h1>`, a paragraph `<p></p>` with a link to the Jankifiers page on the web.
-5. Right after that, a paragraph `<p></p>` with a short description of how to work this jankifier, and what it does.
-6. Right before `</body>`, a copyright notice in HTML (not a comment). Use `<div class="footer">`.
-7. Along with the copyright, optional but nice to have, an open source dedication. The "MIT License" is a good choice.
+2. Add the "copyright notice in an HTML comment" directly after that.
+3. Make sure `<title>` and `<h1>` have the name and version given in the text snippets. Start with "v1.0.0" (which is from [semantic versioning](https://semver.org/)). Add the `<h1></h1>` directly after `<body>`, if it's not already there.
+4. Right after the `<h1>`, there should be a paragraph `<p></p>` with a link to the Jankifiers page on the web.
+5. Right after that, there should be a paragraph `<p></p>` with a short description of how to work this jankifier, and what it does.
+6. Right before `</body>`, there should be a copyright notice in HTML (not a comment). Use `<div class="footer">`.
+7. Along with the copyright, optional but nice to have, an open source dedication. The "MIT License" is a good choice. Just use the verbiage in the text snippets.
 
-Here is the text to use for some of the elements mentioned above (change the things that are in ALL CAPS):
+## Text Snippets
 
 Copyright notice in an HTML comment (for number 2):
 
