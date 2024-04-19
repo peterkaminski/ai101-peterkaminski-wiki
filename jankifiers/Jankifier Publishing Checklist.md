@@ -2,7 +2,7 @@
 
 To be published here, jankifiers should have the items in the instructions below.
 
-You can edit your jankifier file by hand. Or, you can copy the following instructions and text snippets into your favorite LLM and attach your jankifier HTML file, and your LLM may be able to edit the file for you.
+You can edit your jankifier file by hand. Or, you can copy the following instructions and text snippets to a text document, edit the things that are in ALL CAPS (note, add your name in two places), then copy and paste that into your favorite LLM and attach your jankifier HTML file, and your LLM may be able to edit the file for you.
 
 Remember to change the things that are in ALL CAPS. Note that you need to change YOUR NAME in two places.
 
