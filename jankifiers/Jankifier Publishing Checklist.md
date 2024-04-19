@@ -1,6 +1,6 @@
 # Jankifier Publishing Checklist
 
-To be published here, jankifiers should have the following.
+To be published here, jankifiers should have the items in the instructions below.
 
 You can edit your jankifier file by hand. Or, you can copy the following instructions and text snippets into your favorite LLM and attach your jankifier HTML file, and your LLM may be able to edit the file for you.
 
