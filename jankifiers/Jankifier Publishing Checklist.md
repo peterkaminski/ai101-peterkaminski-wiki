@@ -1,6 +1,8 @@
 # Jankifier Publishing Checklist
 
-To be published here, jankifiers should have the following. If you copy the following instructions and attach your jankifier HTML file, your LLM may be able to edit the file for you.
+To be published here, jankifiers should have the following.
+
+You can edit your jankifier file by hand. Or, if you copy the following instructions and example text (change the things that are in ALL CAPS) into your favorite LLM and attach your jankifier HTML file, your LLM may be able to edit the file for you. Remember to ask to let you download the new HTML file.
 
 1. `<!DOCTYPE html>` as the first line. Delete blank lines before it.
 2. Copyright notice in an HTML comment directly after that.
@@ -8,7 +10,7 @@ To be published here, jankifiers should have the following. If you copy the foll
 4. Right after `<body>`, a paragraph `<p></p>` with a link to the Jankifiers page on the web.
 5. Right after, a paragraph `<p></p>` with a short description of how to work this jankifier and what it does.
 6. Right before `</body>`, a copyright notice in HTML (not a comment). Use `<div class="footer">`.
-7. Along with the copyright, optional but nice to have, an open source dedication. MIT License is a good choice.
+7. Along with the copyright, optional but nice to have, an open source dedication. The "MIT License" is a good choice.
 
 ---
 
