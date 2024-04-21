@@ -1,6 +1,7 @@
 # AI Topics
 
 [[Jankifiers]]  
+[[Pete's Tools]] (wip)  
 [[Top AIs]] (wip)  
 # Site Navigation
 
