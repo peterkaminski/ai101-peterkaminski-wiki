@@ -10,6 +10,7 @@ _The "Massive Web" System_
 - Obsidian
 - HackMD
 - Massive Wiki Builder
+- Git
 
 ## Image Handling
 
@@ -26,3 +27,7 @@ _The "Massive Web" System_
 - ffmpeg - command line "swiss army knife"
 - Descript
 - [Opus Clip](https://opus.pro/)?
+
+## Computer Admin Tools
+
+- Homebrew - Mac package manager for Unix tools and other software
