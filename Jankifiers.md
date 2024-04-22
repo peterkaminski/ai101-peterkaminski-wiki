@@ -21,6 +21,7 @@ Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call a
 - [[Adjective Adder.html]] - v1.0.0 - adds random outlandish adjectives before each noun
 - [[Adverbifier.html]] - v1.0.0 - adds some random adverbs
 - [[Catifier.html]] - v1.0.0 - catifies your text
+- [[Chopper.html]] - v1.0.0 - removes every nth character from your input
 - [[Commifier.html]] - v1.0.1 - adds commas randomly
 - [[Essifier-es.html]] - v1.0.1 - adds "es" suffix to each word
 - [[Essifier.html]] - v1.0.1 - adds "s" suffix to each word (not very interesting)

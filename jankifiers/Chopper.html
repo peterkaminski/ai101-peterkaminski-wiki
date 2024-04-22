@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chopper v1.0.0</title>
+</head>
+<body>
+<h1>Chopper v1.0.0</h1>
+<h2>by Peter Kaminski</h2>
+<p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+<p>Enter your text below, choose a &quot;chop rate,&quot; and click &quot;Chop&quot; or &quot;¡doɥƆ&quot; to transform it. The chopped version will be displayed and copied to your clipboard. You can redo the settings or click the other button to redo.</p>
+<p>&quot;Chop rate&quot; is how many characters to chop out of how many characters.</p>
+<p>&quot;Chop&quot; removes 1 out of n (so, chops out fewer). &quot;¡doɥƆ&quot; removes all but 1 characters out of n (so, chops out more). &quot;Halve Fun&quot; removes half the characters either way, but either the left or right one depending on &quot;Chop&quot; or &quot;¡doɥƆ&quot;. Don't worry too much about figuring out, just try it!</p>
+<p>Pro tip: you can add a space or other characters to change where the chop hits, thereby changing the output a lot!</p>
+<textarea id="textInput" rows="4" cols="50"></textarea><br><br>
+
+<input type="radio" id="halveFun" name="chopOption" value="2" checked>
+<label for="halveFun">Halve Fun (1/2)</label><br>
+<input type="radio" id="thirdRail" name="chopOption" value="3">
+<label for="thirdRail">Third Rail (1/3)</label><br>
+<input type="radio" id="goFourth" name="chopOption" value="4">
+<label for="goFourth">Go Fourth (1/4)</label><br>
+<input type="radio" id="aFifthOfChopin" name="chopOption" value="5">
+<label for="goFourth">A Fifth of Chopin (1/5)</label><br><br>
+
+<button onclick="chopText(false)">Chop!</button>
+<button onclick="chopText(true)">¡doɥƆ</button>
+<p><strong>Output:</strong></p>
+<p id="textOutput"></p>
+
+<script>
+function chopText(more) {
+    var inputText = document.getElementById("textInput").value;
+    var chopRate = document.querySelector('input[name="chopOption"]:checked').value;
+    var outputText = "";
+    for (let i = 0; i < inputText.length; i++) {
+        if ((more && i % parseInt(chopRate) === 0) || (!more && i % parseInt(chopRate) !== 0)) {
+            outputText += inputText[i];
+        }
+    }
+    document.getElementById("textOutput").innerText = outputText;
+    navigator.clipboard.writeText(outputText);
+}
+</script>
+
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+
+</body>
+</html>
