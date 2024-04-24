@@ -1,5 +1,7 @@
 # Jankifiers
 
+_New! [[Jankifier Betterification Project]]_
+
 Jankifiers are small tools written in HTML and JavaScript (often by an LLM like ChatGPT, with guidance from a human).
 
 The first jankifiers we've written are used to create and modify ("jankify") prompts for AI, especially AI image generators.
