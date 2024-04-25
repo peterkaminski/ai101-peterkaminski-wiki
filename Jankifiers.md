@@ -30,7 +30,9 @@ Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call a
 - [[Froggifier.html]] - v1.0.0 - froggifies your text
 - [[Interleaver.html]] - v1.0.2 - interleaves two prompts word-by-word (like cars doing a zipper merge)
 - [[Janky Rhymifier.html]] - v1.0.0 - changes some words into janky rhymes of the original word
+- [[JunglefyJankifier.html]] - v1.0.0 - add some jungle atmosphere to your input
 - [[Letterrific.html]] - v1.0.0 - add a random letter between each existing character, good with small prompts
+- [[Lexiconstructor.html]] - v1.0.0 - generates random strings of words
 - [[Numberfier.html]] - changes random words into numbers
 - [[Raccoonify.html]] - v1.0.0 - raccoonifies your text
 - [[RandomJourney.html]] - randomizes the stylize, chaos, and weird values of your Midjourney prompt
