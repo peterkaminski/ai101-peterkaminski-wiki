@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JunglefyJankifier v1.0.0</title>
+<script>
+function junglefyPrompt() {
+    const jungleWords = ['jungle', 'tiger', 'monkey', 'rainforest', 'vine', 'parrot', 'wild', 'exotic', 'bamboo forest', 'tropical bird', 'banana tree', 'orchid', 'river basin', 'forest canopy', 'jaguar', 'poison dart frog', 'liana vine', 'muddy trail', 'waterfall', 'hummingbird', 'ferns', 'undergrowth', 'mangrove', 'palm tree', 'camouflage', 'toucan', 'leaf litter', 'snake', 'mosquito', 'tribal drum'];
+    let inputText = document.getElementById('userInput').value;
+    let words = inputText.split(' ');
+    let output = words.map(word => {
+        // Add a jungle word randomly
+        if (Math.random() < 0.2) {  // 30% chance to add a jungle word after each word
+            const randomJungleWord = jungleWords[Math.floor(Math.random() * jungleWords.length)];
+            return word + ' ' + randomJungleWord;
+        }
+        return word;
+    }).join(' ');
+    document.getElementById('output').textContent = output;
+    navigator.clipboard.writeText(output);  // Copy the output directly to the clipboard
+}
+</script>
+</head>
+<body>
+<h1>Junglefy Your Prompt</h1>
+<textarea id="userInput" rows="4" cols="50" placeholder="Enter your text here..."></textarea>
+<br>
+<button onclick="junglefyPrompt()">Junglefy my prompt!</button>
+<br>
+<h2>Output</h2>
+<p id="output" style="white-space: pre-wrap;"></p>
+
+    <div class="footer">
+        <p>&copy; 2024 Vikki Baptiste</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+
+</body>
+</html>
