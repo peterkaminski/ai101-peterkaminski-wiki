@@ -15,10 +15,11 @@ Read these instructions and text snippets. Make the following changes to the att
 1. Confirm that `<!DOCTYPE html>` is the first line. Delete blank lines before it.
 2. Add the "copyright notice in an HTML comment" directly after that.
 3. Make sure `<title>` and `<h1>` have the name and version given in the text snippets. Start with "v1.0.0" (which is from [semantic versioning](https://semver.org/)). Add the `<h1></h1>` directly after `<body>`, if it's not already there.
-4. Right after the `<h1>`, there should be a paragraph `<p></p>` with a link to the Jankifiers page on the web.
-5. Right after that, there should be a paragraph `<p></p>` with a short description of how to work this jankifier, and what it does.
-6. Right before `</body>`, there should be a copyright notice in HTML (not a comment). Use `<div class="footer">`.
-7. Along with the copyright, optional but nice to have, an open source dedication. The "MIT License" is a good choice. Just use the verbiage in the text snippets.
+4. Right after the `<h1>`, there should be an `<h3>by YOUR NAME</h3>` line.
+5. Right after the `<h3>`, there should be a paragraph `<p></p>` with a link to the Jankifiers page on the web.
+6. Right after that, there should be a paragraph `<p></p>` with a short description of how to work this jankifier, and what it does.
+7. Right before `</body>`, there should be a copyright notice in HTML (not a comment). Use `<div class="footer">`.
+8. Along with the copyright, optional but nice to have, an open source dedication. The "MIT License" is a good choice. Just use the verbiage in the text snippets.
 
 ## Text Snippets
 
