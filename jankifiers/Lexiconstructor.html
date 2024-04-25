@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lexiconstructor v1.0.0</title>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const words = `abandon abandoned abate abatement abdomen abdominal aberration abide
+ability able abnormal abode abolish abounding about above abridge
+abroad abrupt abruptly absence absent absolute absorb absorption
+abstract absurd abundance abundant abuse abusive academy accelerate
+accent accept acceptance access accessible accession accessory
+accident accidental accidentally accommodate accompany accomplish
+accomplishment accord accordance according accordingly account
+accountability accountable accountant accounting accretion accumulate
+accumulation accuracy accurate accurately accusation accuse accused
+accustom acid acknowledge acquire acquisition acre acrid across act
+acting action activate activation active activist activity actual
+actually acute acuteness adaptation adapted addiction addition
+additional additionally address adequate adequately adhere adherence
+adherent adhesion adhesive adjacent adjective adjectively adjoining
+adjunct adjust adjustment administer administrative administrator
+admiration admission admit admitted admitting adolescent adopted
+adoption adorn adultery advance advanced advantage adventure adversary
+adverse advice advise advocate aerial aesthetic affair affect affected
+affecting affection affinity affirm affirmation affirmative affix
+afflict afford affordable affront african after aftermath again
+against agency agent aggregate aggression agility agitate agitation
+agree agreeable agreement agricultural agriculture aide aids airy
+alarm albeit albumin alcohol alcoholic aldehyde alert alien alienate
+align alignment alike alive alkaline alkaloid allay allegation allege
+allegedly allegiance alliance allied allocate allocation allow
+allowance alloy ally almost alone along alongside alphabet already
+also alter alternate although altitude altogether alumina aluminium
+always amateur ambassador amber ambiguous ambition ambulance ambush
+amend amendment american amid ammonia amorphous amount amusement
+amusing analogous analogy analysis analyst anatomy ancestor anchor
+ancient anew angel anger angle angles angry angular aniline animal
+animate animated animation announce annoy annual annually anonymous
+another answer answerable antagonist antecedent antelope anterior
+anthozoa anticipate antimony antique antiquity anxiety anxious
+anything apart apartment aperture apology apparatus apparel apparent
+apparently appeal appealing appear appearance appease appendage
+appendix appetite applaud applause apple applicable applicant
+application applied apply appoint appointed appointment appreciation
+apprehend apprehension approach appropriate appropriately approve
+apron aquatic arbitrary arboreal arch architectural archive arctic
+ardent area arena arguably argue argument arise arm armed armor arms
+army aromatic around arrange arranged arrangement array arrest arrival
+arrive arrogance arrogant arrow arsenic artery artful article
+articulate articulation artifice artificial artillery artist artless
+artwork ascend ascending ascent ascertain ash ashes asiatic aside
+aspect aspirate aspiration aspire assassination assault assemblage
+assemble assembly assent assert assertion asset assign assist
+assistance assistant assize associate associated association assume
+assumed assuming assumption assurance assure astonishing astringent
+asunder asylum athletic atlantic atmosphere atom atrocity attach
+attached attachment attack attain attainment attempt attend attendance
+attendant attended attention attentive attitude attorney attract
+attraction attractive attribute auction audible audience audio audit
+auditory augment austere authentic author authority authorize
+authorized auto automatic automatically autonomy autumn auxiliary
+availability available average aversion avoid await awake awareness
+away awkward axis babble bachelor back backbone backdrop backing
+backup backward badge baggage bail bait balance balanced ball ballast
+ballet balloon ballot balsam band bandage bank bankrupt banner baptism
+barbarous bare barely bargain bark barrel barren barter base basement
+basic basin basket bass bastard bastion bat bath battery battle
+battlefield bay beak beam bear beard bearer bearing beast beat beaten
+beating beautiful beauty because become becoming been beetle before
+beforehand beggar begin beginning behalf behave behavior behind being
+belief believe believer bell belly belong belonging beloved below belt
+bench benchmark bend bending beneath benefice beneficial beneficiary
+benefit bent benzene beside besides best bestow betray better between
+beverage beyond bias bible bid bill bind binding biography biological
+birch bird birth bishop bismuth bite bitter bitumen bivalve bizarre
+black bladder blade blame blanch blank blanket blast bleed blemish
+blend bless blessed blessing blind blister block blood bloody bloom
+blossom blow blue blunt bluster board boarding boast boastful boasting
+boat bodies bodily body bohemian boil boiled boiler boiling boisterous
+bold bolster bolt bond bondage bone bonnet bonus bony book booking
+boom boost boot border bore boring born borough bosom both bottle
+bottom bounce bound boundary bow bowl bowsprit brace bracket braid
+brain brake branch branches branching brass brave breach bread breadth
+break breakdown breaking breakthrough breast breath breathe breathing
+breech breeches breed breeding breeze brick bridge bridle brief
+briefly bright brighten brightness brilliant bring bringing brisk
+british brittle broach broad broadband broadcaster broadly broken
+broker bromine bronze brood brother brought brown browser bruise brush
+brutal bryozoa bubble buck buckle budding buddy buffalo buffer buffoon
+bug build building built bulk bull bully bunch bundle burden
+bureaucracy burial burlesque burn burning burst bury bush business
+bustle busy but butcher butter button cabbage cabin cabinet cable cage
+cake calamity calcareous calcium calculate calculation calculus
+calendar call called calling calm calmness calyx camp camphor canal
+cancer candidate candle cane canker cannon canon cant canvas canvass
+capability capable capacity capillary capital capitalism capitalist
+capstan capsule captain captive capture carbon carbonate carbonic card
+cardinal care careful careless cargo carpet carriage carried carrier
+carry carrying cartilage carve carving case casino cask cast casting
+castle casual casualty catalogue catch catching cater cathartic
+cathedral catholic cattle cause causing caustic caution cautious cave
+cavity cease ceiling celebrate celestial cell cellular cement cemetery
+censure center central century ceremony certain certainty certificate
+cessation chaff chain chair chalk challenge challenging chamber
+championship chance chancery change changeable changed changing
+channel chaos chapel chapter character characteristic characterize
+charcoal charge charitable charity charm charming chart charter chase
+chastity chatter cheat check cheek cheer cheerful cheese chemical
+chemistry cherish cherry chest chestnut chicken chief chiefly child
+childish children chill chimney china chinese chisel chloride chlorine
+choice choir choose chop chord chorus chosen chronic chunk church
+cipher circle circuit circular circulate circulation citation citizen
+citizenship city civic civil civilian civilization claim clamor clamp
+clarify clarity clash clasp class classical classification classify
+clause claw clay clean cleaning cleanse clear clearing cleavage cleave
+cleft clergy clergyman clerk cliff climate cling clinic clinical clip
+cloak clock cloister close closely closure cloth clothe clothes
+clothing cloud club clumsy cluster clutch coach coal coalesce
+coalition coarse coarsely coast coastal coat coating cocktail coffee
+coffin cognitive cognizance cohesion coin coincide coincidence cold
+collaborate collaboration collapse collar collateral collation collect
+collected collection collective collectively collector college
+collision colonial colony color colour colored colorful coloring
+colorless colourful column columnist comb combat combination combine
+combined combining come comfort comic coming command commander
+commanding commence comment commentary commentator commerce commercial
+commission commissioner commit committee commodity common commonly
+commons commotion communicate communication communion communist
+community compact companion company comparable comparative compare
+comparison compass compassion compel compelling compensate
+compensation competence competent compile complaint complement
+complete completion complex complexion complexity compliance
+complication comply component compose composed composer composing
+composite composition compound comprehend comprehensive compress
+comprise compromise compulsory compute concave conceal concealed
+concealment concede conceit conceive conception concern concerned
+concerning concert concession conclude conclusion concord concrete
+concretion concurrence condemn condense condition conduct conductor
+cone confederate confer conference confess confession confidence
+configuration confine confined confirm confirmation conflict conform
+conformity confound confront confrontation confuse confused confusion
+congratulate congregation congress congressional conical conjecture
+conjunction connect connected connection conquer conquest conscience
+conscious consciousness consecrate consecutive consensus consent
+consequence consequent consequently conservation conserve consider
+considerable considerably consideration consign consist consistency
+consistent consistently consisting consolidate consonant consort
+conspicuous conspiracy constant constituency constituent constitute
+constitution constitutional constrain constraint construct
+construction consult consultant consultation consume consumption
+contact contagious contain contained containing contemplate contempt
+contend contender content contention contents contest continent
+contingent continually continuance continue continued continuous
+contract contracted contraction contractor contradiction contrary
+contrast contribute contributor contrivance contrive control
+controversial controversy convenience convenient convent convention
+conventional conversation converse conversion convert convex convey
+conveyance conveying convict conviction convincing cool cooperate
+cooperative coordinate coordination coordinator cop cope copper copy
+copyright coral cord cordial core corn corner corolla corona
+corporation correct correction correlate correlation correspond
+correspondence correspondent corresponding corridor corrosive corrupt
+corruption cost costly cotton couch council councillor counsel
+counselling counsellor count countenance counter counterfeit
+counterpart countless countries country coup couple coupling courage
+course court courteous courtesy covenant cover coverage covered
+covering cowardly crab crack cradle craft crane cranium crank crawl
+cream create creation creativity creator creature credibility credible
+credit creditor creep creeper creeping crescent crest cricket crime
+criminal crimson crisp critic critical critically criticise criticism
+critique crooked crop cross crossbow crossing crotchet crowd crown
+crude cruel cruelty cruise crush crust crustacea crystal crystalline
+cue cult cultivate cultivation culture cunning curb cure curiosity
+curious curl currency current curriculum curse curtain curvature curve
+cushion custody custom customary cute cutter cutting cycle cylinder
+cylindrical cynical dagger daily dainty dairy dam damage damaging damp
+dance danger dangerous dare dark darken darkness dart dash database
+date daughter dawn dead deaden deadline deadly deal dealer dealing
+death debate debris debt debut decay decayed deceit deceitful deceive
+deception decide decided decision decision-making decisive deck
+declaration declare decline declivity decomposition decorate
+decoration decrease decree dedicated dedication deduction deed deem
+deep deeply deer default defeat defect defective defend defendant
+defender defense defensive defiance deficiency deficient deficit
+defile define definite definition deformed deformity defraud defy
+degrade degraded degree deity dejected dejection delay delegate
+delegation delete deliberate delicacy delicate delicious delight
+delineate delirium deliver delivery deluge demand democracy democratic
+demon demonstration denial denote denoting denounce dense density deny
+depart department departure depend dependence dependent depict deploy
+deployment deposit deposition depress depressed depression deprive
+deprived depth deputy derision derivation derivative derive derived
+descend descent describe description desert deserving design designate
+designation designed desirable desire desirous desktop desolate
+desperate desperately destiny destitute destroy destruction
+destructive detached detail detain detection detention deteriorate
+determination determine determined devastate develop developed
+development deviate deviation device devil devise devote devoted
+devotion dexterity dexterous diagnose diagnosis diagonal dialect
+dialogue diameter diamond diatonic dictate dictator diet differ
+difference different differential differentiate difficult difficulty
+diffuse digest digestion digestive digging dignity dilemma diligence
+diligent dilute dimension diminish diminution diminutive dioxide dip
+diplomat diplomatic dipping direct directed direction directly
+director directory dirty disability disable disabled disagree
+disagreement disappear disappoint disappointment disastrous discard
+discern discharge disciple discipline disclose disclosure discontent
+discord discordant discount discourage discourse discover discovery
+discredit discretion discrimination discuss discussion disdain disease
+diseased disengage disfavor disgrace disguise disgust dish dishonest
+dishonor disjoint disk dislike dismal dismiss dismissal dismount
+disorder disorderly dispatch dispense disperse displace display
+displeasure disposal dispose disposed disposition dispute disquiet
+disregard disrupt disruption dissection dissent dissolute dissolve
+distance distant distaste distemper distill distillation distinct
+distinction distinctive distinctly distinguish distinguished distort
+distract distrain distress distribute distribution district distrust
+disturb disturbance disturbing disunite ditch diurnal dive diverse
+diversion diversity divert divest divide divided dividing divination
+divine divinity division divorce dock doctor doctrine document
+documentation doing dolphin domain domestic dominance dominant
+dominion donation done donor door dorsal dose dot double doublet
+doubling doubt doubtful down downtown downward drag dragon drain
+dramatically drapery draught draw drawing drawn dread dreadful dream
+dress dressing dried drift drill drink drinking drive driven driver
+driving drop dropping drought drown drum drunken drying dual dub duck
+ductile dull dullness dumb dump duo duplicate durable duration during
+dust duty dwelling dying dynamic each eager eagle early earnest
+earnings earth earthy ease easily east eastern easy eating eccentric
+echo eclipse ecliptic ecological economics economist economy ecstasy
+edge edible edifice editorial educate education educator effect
+effective effectiveness effeminate efficacy efficiency efficient
+efficiently effort effusion ego egyptian eight eighteen eighth either
+eject elaborate elastic elbow elder elect election electoral electric
+electrical electricity electronics elegant element elementary elephant
+elevate elevated elevation elevator eleven eleventh eligible eliminate
+elite ellipse eloquence else elsewhere embark embarrass embarrassment
+embassy embed emblem embody embrace embryo emergence eminence eminent
+emission emit emotion emotionally emperor emphasis empire empirical
+employ employed employment empower empty enact enamel encircle
+encompass encounter encourage encouragement encouraging encumber
+endeavor endeavour ending endless endorse endorsement endowment
+endurance endure enduring enemy energy enforce enforcement engage
+engaged engagement engaging engender engine engineer english engrave
+engraved engraving engross enhance enjoy enjoyable enjoyment enlarge
+enlarged enlargement enormous enough enquire enrich enrol enroll
+ensign ensue entangle enter enterprise entertain entertaining
+entertainment enthusiasm enthusiast entire entirely entitle entity
+entrails entrance entreat entreaty entrepreneur entry envelop envelope
+envy epidemic episcopal epoch equal equality equally equation equator
+equip equitable equity equivalent equivocal era erect erection
+erroneous error erupt eruption escalate escape escutcheon especially
+essay essence essential essentially establish establishment estate
+esteem estimate estimation eternal ether ethereal ethic ethnic
+ethylene eucharist european evacuate evaluation evaporate even evening
+event evergreen every evidence evident evil evoke evolution
+evolutionary evolve exact exactly exactness exaggerate exalt exalted
+examination examine examining example excavate exceed exceeding
+excellence excellent except exception exceptional excess excessive
+exchange excite excitement exciting exclamation exclude exclusion
+exclusive exclusively excursion excuse execute execution executive
+exempt exemption exercise exert exertion exhaust exhibit exhibition
+exile exist existence existing exit exotic expand expansion
+expectation expedient expedition expel expenditure expense experience
+experiment experimental expert expertise expire explain explanation
+explicit explicitly explode exploit exploitation explore explosion
+explosive expose exposition exposure express expressed expression
+expressive exquisite extend extended extending extension extensive
+extensively extent exterior external extinct extract extracted
+extraction extraordinary extravagant extreme extremely extremist
+extremity fabric fabulous face facilitate facility facing fact faction
+factor faculty fade fail failed failing failure faint fair fairness
+faith faithful fake fall falling fallow false falsehood falsely
+falsify fame familiar family famous fanciful fancy fantastic fantasy
+fare farewell farm farther farthest fashion fashionable fast fasten
+fastened fastening fatal fate father fatigue fault favor favorable
+favorite favourable fear feast feat feather feathered feature federal
+feeble feed feeding feel feeling felicity fell fellow fellowship
+female feminine feminist fence fencing ferment fertile festival feudal
+fever fibre fibrous fiction fidelity field fierce fifteen fifteenth
+fifth fight fighting figurative figure figured filament file fill
+fillet filling film-maker filter final find finding fine fineness
+finger finish finished finishing fire firearm firefighter firework
+firm firmly firmness first fish fishes fishing fission fissure fit
+fitness fitting five fixed fixture flag flame flank flash flashing
+flask flat flatter flattery flavor flavored flavour flaw flawed flax
+flee fleet flesh fleshy flexibility flexible flight float floating
+flock flood floor flounder flour flourish flow flower flowering
+flowing fluid fluke flush flute flux flying focus foil fold folding
+foliage foliated follow follower following folly fond fondness food
+fool foolish foot footage footing for forbear forbid force forced
+forcible forcing fore forecast forehead foreign foreigner foremost
+foreshow foresight forest foretell forfeit forge fork forked form
+formal formality formally format formation formative formed former
+formerly forming formula formulate forth forthcoming fortify fortress
+fortunate fortune forum forward fossil foster foul found foundation
+founded founder fountain four fourteen fourth fraction fracture
+fragile fragment fragrant frame framework franchise frank frankly
+fraud free freedom freely freezing freight french frequent frequently
+fresh fresh-water fret friend friendly friendship fright frighten
+frightful fringe frivolous frolic from front frontal frontier frost
+froth frozen frugal frugality fruit fruitful frustrate frustrated
+frustrating frustration fugitive fulfil full fullness full-time fully
+function functional fund fundamental fundamentally fundraising funeral
+furious furnace furnish furnished furniture furrow further fusion
+future gain gall gallant gallery galley gallon gambling game gaming
+garden garland garment garnish garrison gaseous gate gather gathering
+gauge gay gayety gaze gear gender gene genera general generally
+generate generation generic generous genetic genius genocide gentle
+gentleman genuine genuinely genus geology geometry german germinal
+gesture getting ghost giddy gift gig gigantic gill girdle give given
+giving glance gland glass glassy glimpse globalization globe globular
+gloom gloomy glorious glory gloss glossy glucoside glutinous goddess
+going gold golden good goodness goose gorgeous gospel gossip gothic
+govern governance governing government governor grace graceful
+gracious grade gradient gradual gradually graduate graduated grain
+grains grammar grand granite grant granular graphic graphics grapple
+grasp grasping grass grate grateful gratify grating grave gravel
+gravity gray grease great greatly greatness grecian greedy greek green
+greenhouse greenish grid grief grieve grievous grin grind grip gripe
+grocery groove gross ground group grow growing growth guarantee guard
+guardian guerrilla guess guidance guide guideline guilt guilty
+gunpowder gut guttural habit habitat habitation habitual hackney hail
+hair half halfway hall halt hammer hand handful handle handling
+handsome handy hang hanging happen happiness happy harangue harass
+harassment harbor harbour hard harden hardened hardness hardware hardy
+harm harmless harmonious harmonize harmony harness harrow harsh
+harvest haste hasten hastily hasty hatch hatred haughty haul haunt
+have having hawk hazard head headdress headlong headquarters heal
+healing health healthcare healthy heap hear hearing heart hearty heat
+heathen heating heave heaven heavenly heavily heavy hebrew hedge
+heedless heel height heighten helmet help hence herb herbaceous herd
+heritage heroic herring hesitate hidden hide hierarchy high highly
+high-profile highway hilarious hill himself hind hinder hindrance
+hinge hint hip hire hissing historian history hold holding hole
+holland hollow holy homage home homeland homeless homologous homology
+honest honesty honey honor honorable honorary hood hook hooked hoop
+hope hopeful hopefully horizon horizontal horn horror horse horseback
+hospital hostage hostile hostility hound hour house household housing
+however human humanitarian humanity humble humility humming humor
+humorous hundred hunger hunt hunting hurry hurt hurtful husband
+hydrate hydrocarbon hydrogen hydrous hydroxyl hypothesis icon idea
+ideal identical identification identity ideological ideology idiom
+idiot idle idleness igneous ignorance ignorant illegal illuminate
+illusion illustrate illustration image imagery imaginary imagination
+imagine imitate imitation imitative immature immediate immediately
+immense immerse immersion immigration imminent immortal immovable
+immune impair impart impartial imperfect imperial impetuous implement
+implementation implication implied import importance important impose
+imposing imposition impotent impregnate impress impression imprison
+imprisonment improper improve improvement impudent impulse impure in
+inability inactive inadequate inanimate inappropriate incapable
+incense incentive inch incidence incident incision incline inclined
+inclining inclose inclosed inclosure include included including
+inclusion income incorporate incorrect increase incumbent incur
+indefinite indent indented independence independent index india indian
+indicate indication indicator indictment indies indifferent indigenous
+indigo indirect indistinct individual indolent induce induction
+indulge indulgence industry inequality inevitable infamous infant
+infantry infect infection infectious infer inference inferior infernal
+infinite infinity infirm inflame inflamed inflammation inflate
+inflated inflation inflection inflict influence influential info
+inform informal information infrastructure infuse infusion ingenious
+ingredient inhabit inhabitant inherent inherit inheritance inhibit
+inhuman iniquity initial initiate inject injection injure injurious
+injury injustice ink inmate inner innocence innocent innovation
+innovative input inquire inquiry insane insanity inscribe inscription
+insect insensible insert inserted insertion inside insider insipid
+insnare insolent insoluble inspect inspection inspector inspiration
+inspire inspired installation instance instant instantly instead
+instinct institute institution institutional instruct instruction
+instrument instrumental insufficient insult insurance intact intake
+integral integrate integrated integration integrity intellect
+intellectual intelligence intend intended intense intensify intensity
+intensive intent intention interact interaction interactive intercept
+interchange intercourse interest interface interfere interference
+interim interior intermediate internal interpret interpretation
+interrupt interval intervene intervention intestine intimate into
+intricate intrigue intriguing introduce introduction intrude invade
+invalid invasion invent invention inversion inverted invest
+investigator investor invisible invite invoke involve involvement
+involving inward iron ironic ironically irony irregular irrelevant
+irritable irritate irritation island isolate isolated isolation
+isomeric issue italian itself ivory jack jacket jail jaundice jerk jet
+join joint jointed journal journalism journey judge judgment judicial
+juice jump junction junior jupiter jurisdiction jury just justice
+justification justify keel keen keep keeper keeping kernel kidney kind
+kindle kindly kindness kindred king kingdom kit kitchen knife knight
+knit knitting knock knot know knowing knowledge labor laborious lace
+lack lad ladder lady lake lance land landing landlord landmark
+landscape lane language languish lantern lap large large-scale larva
+laser lash last lasting late lately lateral lathe latin latitude
+latter laudable laugh laughter launch lavish lawful lawn lawsuit layer
+laying layout lead leader leading leaf leaflet league leak lean
+leaning leap learn learned learning lease least leather leave leaves
+left legacy legal legend legendary legislation legislative legislature
+legitimate leguminous length lengthy lens less lessen lesser lesson
+lethal letter level lever liability liable liberal liberate liberation
+liberty license licensed licentious life lifeless lifelong lifetime
+lift ligament ligature light lighten lighter lighting lightly
+lightning like likelihood likely likeness likewise liking limb limber
+lime limestone limit limitation limited line linear linen line-up
+linger lining link lion liquid liquor list listing literacy literal
+literally literary literature litre litter little live lively liver
+livery lives living load loathing lobby local locality location lock
+locomotive lodge lodging lofty log logic logical logo long longer
+longing long-standing long-time look looking loom loop loose loosen
+lord lose loss lost lottery loud love lover lower lowering loyal
+loyalty lumber luminous luster lustful luxurious luxury lying
+lymphatic lyric machine machinery mackerel made madness magazine
+magical magistrate magnesia magnesium magnetic magnetism magnificent
+magnify magnitude maiden mail main mainland mainstream maintain
+maintenance major majority make make-up making male malice malicious
+malignant mammalia mammals manage management manager mandate mandatory
+manganese manifest manifold manipulate manipulation mankind manner
+mantle manual manufacture manufacturing manure manuscript many
+marathon marble march margin marginal marine mark marked marker market
+marketplace marking marriage marrow marshal martial mask masonry mass
+massacre massive mast master match mate material mathematical matter
+mature maturity maximize mayor meadow meal mean meaning meaningful
+meanness meantime measure measured measurement measuring meat mechanic
+mechanical mechanism medal median mediate medical medication medicinal
+medicine medieval meditate meditation medium meet meeting melancholy
+melody melt melting member membership membrane memo memoir memorable
+memorial memory mental mentally mention mentor merchandise merchant
+mercury mercy mere merely merge merger meridian merit merry message
+messenger metal metallic metameric metaphor method methodology
+metrical middle midst might migration mild militant military militia
+milk mill million mind mine miner mineral mingle minimal minimize
+mining minister ministry minor minute miracle mirror mischief
+miserable misery misfortune misleading miss missile mission mistake
+mistaken mistress mitigate mixed mixture mob mobile mobility mobilize
+mock mode model moderate modern modest modesty modification modify
+mohammedan moist moisten moisture molasses molding mole molecule
+mollusca moment momentum monarch money monk monkey monopoly monster
+monstrous month monthly monument mood moon moral morality morally
+morbid more moreover morning mortal mortar mortgage mortify mosaic
+mosque most mostly moth mother motion motivate motivation motive
+motorist mound mount mountain mounted mournful mourning mouse mouth
+movable move movement moving much muddy multiply multitude municipal
+murmur muscle muscular muse mushroom music musical must mustard mute
+mutual muzzle mystery myth nail naked name namely narcotic narration
+narrative narrow narrowly nasal nasty nation national nationwide
+native natural naturally nature naval navigation near nearby nearly
+neat necessary necessity neck need needle negative neglect negligence
+negligent negotiate negotiation neighbor neighboring neighbouring
+neither nerve nervous nest net network neuter neutral newly newsletter
+newspaper next nice niche nickname night nine nineteen nitrogen
+nitrogenous nobility noble nobleman nocturnal nod noise noisy nominate
+nomination nominee nonetheless non-profit nonsense noon norm normal
+north northern northwest nose notable notably notation notch note
+notebook noted nothing notice notify notion notorious nourish novel
+novelist nowadays noxious nucleus number numbers numerous nurse
+nursery nursing nutrition oath obedience obedient obesity object
+objection objective obligation oblige oblique oblong obscene obscure
+obscurity obsequious observance observant observation observe observer
+observing obsess obsession obsolete obstacle obstinacy obstinate
+obstruct obstruction obtain obtained obvious occasion occasional
+occupation occupied occupy occur occurrence occurring ocean octave
+odds offend offender offense offensive offer offered offering office
+officer official offset offspring often oily ointment olfactory olive
+omission on once ongoing only onward opaque open opening openly opera
+operate operation operational operative operator operculum opinion
+opponent oppose opposed opposite opposition oppress oppression
+oppressive opt optical optimism optimistic oral orange oration orator
+orbit orchestra order orderly ordinary ordnance organ organic organism
+organization organizational oriental orientation orifice origin
+original originally originate ornament ornamental orthodox other
+otherwise out outbreak outer outfit outing outlet outline outlook
+output outrage outside outsider outstanding outward oval over overcome
+overflow overhang overlook overly overnight overpower overseas oversee
+overseer overthrow overturn overwhelm overwhelming owner ownership
+oxidation oxide oxygen oyster pace pacific pack package packet packing
+pad paddle page paid pain painful paint painted painter painting pair
+palate palatine pale palliate palm panel panic paper parade paradise
+paragraph parallel parameter parapet parasite parcel parchment pardon
+parent parental parietal parish park parliament parliamentary part
+partake partaking partial partially participation particle particular
+particularly parties parting partisan partition partly partner
+partnership part-time party pass passable passage passing passion
+passionate passive password past paste pastor pastoral pasture patch
+patent path pathway patience patient patriarch patrol patron patronage
+pattern pause pavement pavilion payable payment peace peaceful peak
+pearl pearly peasant pectoral peculiar pedestal peduncle peel peer
+peevish penalty penance pencil pendent pendulum penetrate penitent
+pension people pepper perceive perception perch percussion perennial
+perfect perfection perforated perform performance performed performer
+perfume pericarp period periodical permanent permanently permission
+permit perpetual perplex perplexity persian persist persistent person
+personal personnel persuade persuasion pertaining perverse pervert
+petition petroleum petty phenomena phenomenon philosopher
+philosophical philosophy phosphorus phrase physical physician pick
+pickle picture piece pierce piercing pigeon pigment pile pill pillage
+pillar pillow pine pink pioneer pipe pipeline pirate pistil piston pit
+pitch pity pivot place placed placement placenta plain plaintiff plait
+plan plane planet plank plant plaster plastic plate platform platinum
+plausible play player playing plea plead pleading pleasant please
+pleasing pleasure pledge pliable pliant plot pluck plug plumb plume
+plump plunder plunge plural pocket poem poetical poetry point pointed
+pointing poison poisonous polar polarity pole police policy polish
+polished polite politic political politics poll pompous pond pool poor
+pop pope popular popularly porcelain porous port portable portfolio
+portion portrait portray position positive possess possessed
+possession possible post posterior postpone posture post-war potash
+potassium potent potentially potter pottery pouch pound pour poverty
+powder powdered power powerful practical practice practiced
+practitioner praise prayer preach preacher preaching precede precedent
+preceding precious precipitate precise precisely precision predator
+predecessor predicate predictable predominantly preface preference
+prefix pregnancy pregnant prejudice preliminary prelude premature
+premier premise premium preparation prepare prepared presage prescribe
+prescription presence present presently preservation preserve preside
+presidency president presidential press pressing pressure prestigious
+presumably presume pretend pretender pretty prevail prevailing
+prevalence prevent prevention previous previously prey price prick
+pricking prickly pride priest primarily primary prime primitive prince
+principal principle print printed printing prior prison prisoner
+privacy private privately privatization privilege privy prize
+probability probable probably probe problem problematic proboscis
+procedure proceed proceeding proceeds process processing procession
+processor proclaim procure prodigal produce produced producing product
+production productive productivity profane profess profession profit
+profitable profound profuse programming progress progressive prohibit
+project projectile projection prolific prominent promise promising
+promote promotion prompt pronoun pronounce pronounced proof propaganda
+propagate proper properly property prophecy proportion proposal
+propose proposition propriety prose prosecute prosecution prosecutor
+prospect prospective prosperity prosperous prostitute prostrate
+protect protection protective protein protest protester protocol
+protoplasm protract proud prove proverb provide provided province
+provincial provision provoke prudence prudent psychiatric
+psychological public publication publicity publicly publish publishing
+pudding puddling puff pull pulp pulse pump punch puncture pungent
+punish punishment punk puppet purchase pure purely purify purity
+purple purpose purse pursue pursuit push pushing putting puzzle
+pyramid pyroxene quadrant quadrate quail qualified qualify qualities
+quality quantity quarrel quarry quarter quartz queen query quest
+question questionnaire quick quicken quickly quickness quiet quietly
+quill quit quite quota quotient rabble race racial racism racist rack
+radar radiant radiate radiated radiation radical radius rage ragged
+raid rail railroad railway rain raise raised raising rake rally ramble
+rampart random range rank ranking rapacious rapid rapidity rapidly
+rare rarely rash rat rate rather rating ratio rational rattle ravenous
+ray reach reaction read readily readiness reading ready real reality
+realization realize realm rear reason reasonable reasonably reasoning
+reassure rebel rebellion rebuild rebuke recall recede receipt receive
+received receiver receiving recent recently receptacle reception
+recess recession recipient reciprocal recital recite reckless reckon
+reckoning reclaim recognition recognize recoil recompense reconcile
+reconstruction record recording recount recover recovery recruit
+recruitment rectify rectitude reddish redress reduce reduced reducing
+reduction reed reel refer referee reference referendum refine refined
+refinement reflect reflected reflection reform reformed refractory
+refrain refuge refugee refusal refuse regain regard regarded
+regardless regime regiment region register registration regret regular
+regularly regulate regulator regulatory rehabilitation rehearse reign
+reinforce reject rejection relapse relate related relating relation
+relative relax release relevance reliability reliance relief relieve
+relieved religion religious relish reluctant remain remainder remains
+remark remarkable remarkably remedy remember remembrance reminder
+remission remote removal remove removed removing render rendered
+rendering renew renounce renowned rent rental repair repeat repeated
+repeating repetition replacement reply report reportedly reporting
+repose represent representation representative reproach reproduce
+reproduction reproof reprove reptile republic republican reputation
+request require required requisite requital requite rescue resemblance
+resemble resembling resentment reserve reserved reservoir reside
+residence resident residential residue resign resignation resin
+resinous resist resistance resolute resolution resolve resolved resort
+resound respect respecting respective respectively respiration respond
+response responsible rest restless restoration restore restrain
+restraint restrict restriction result resulting resume retail retain
+retainer retard retire retired retirement retort retract retreat
+retrieve return reveal revelation revenge revenue reverence reversal
+reverse reversed reversion review revision revival revive revolt
+revolution revolutionary revolve revolving reward rhetoric rhyme
+rhythm ribbon rich riddle ride rider ridge ridicule ridiculous riding
+rifle rigging right righteous rightful rigid rigor rigorous ring riot
+rip ripe ripple rise rising risk risky ritual rival river road rob
+robbery robust rock rocket rod rogue roll roller rolling roman romance
+romantic roof room root rope rose rostrum rotate rotation rough
+roughly round rounded roundish rouse rove roving royal royalty rubber
+rubbish rudder rude rudimentary ruff ruffle rugged ruin rule ruler
+ruling ruminant rumor rumour runner running rupture rush russian rust
+rustic sack sacrament sacred sacrifice saddle safe safety saffron
+sagacious said sail sailing saint sake sale salient saline salmon salt
+salute same sameness sanction sanctity sanctuary sand sanguine
+sanskrit satisfaction satisfy saturate saturated sauce savage save
+saving savor say scale scallop scandal scare scarf scarlet scatter
+scattered scenario scene scent sceptical scheme scholar scholarship
+school science scientific scold scope score scorn scotch scramble
+scrape scraping scratch screen screening screw scripture scrutiny
+sculpture seal seam search searching season seat seaweed second
+secondary secrecy secret secretary secrete secretion sect section
+secular secure security sediment see seed seeing seek seeker seemingly
+segment seize seizing seizure seldom select selection selective self
+selfish sell semblance seminar seminary senate senator send senior
+sensation sense sensibility sensible sensitive sensitivity sensual
+sent sentence sentiment sentinel separate separated separating
+separation sequence sequester serial series serious sermon serpent
+serpentine servant serve service servile serving servitude session set
+setting settle settled settlement settler set-up seven seventh seventy
+sever several severe severely severity sexual shackle shade shadow
+shaft shake shall shallow shame shameful shank shape shaped share
+shareholder shark sharp sharpen shatter shave shearing shears sheath
+shed shedding sheep sheer sheet shell shelter shepherd shield shift
+shifting shine shining ship shipping shiver shoal shock shocking shoe
+shoot shooting shore short shortage shorten shortly short-term shot
+should shoulder show shower showing showy shrewd shrill shrink shroud
+shrub shrug shuffle shut sibling sick sickly sickness side sigh sight
+sign signal signature significance signify silence silent silicate
+silicon silk silly silurian silver silvery similar simple simplicity
+simulate simulation simultaneously sin since sincere sing singing
+single singular sinister sink siphon sister sitting situated situation
+sixteen sixteenth size skeleton sketch skill skilled skillful skin
+skip skirt skull slack slacken slam slander slap slash slate slaughter
+sleep sleeve slender slice slide sliding slight slightly slip slippery
+slogan slope sloping slot slow slowly sluggish smack small smallpox
+smart smash smear smell smile smoke smoky smooth smother snail snake
+snap snatch snow snuff soak soar sober so-called social socialist
+society sodium soft soften soil solar soldier sole solely solemn
+solemnity solicit solicitor solid solidarity solidity solitary
+solitude solo soluble solution solvent some somehow something sometime
+sometimes somewhat song sonorous soothe sophisticated sore sorrow
+sorrowful sort soul sound sounding sour source south southern
+sovereign sovereignty space spam span spanish spar spare spark sparkle
+sparrow spasmodic speak speaker speaking spear special specialize
+specialized specially species specific specification specify specimen
+specious spectacle spectacular spectator spectrum speculate
+speculation speculum speech speed spell spelling spend sphenoid sphere
+spice spider spike spill spin spindle spine spiral spire spirit
+spirited spiritless spiritual spirituous spit spite spleen splendid
+splendor splinter split spoil spoken spokesman spokesperson
+spokeswoman sponge spongy sponsorship sport sporting sportive spot
+spotlight spotted spouse spout spread sprightly spring springing
+sprinkle sprout spruce spur spurious spy squad squander square squeeze
+squirrel stab stability stabilize stable staff stage stagger stagnant
+stain stake stale stalk stall stamens stamp stance stand standard
+standing staple star starch stark start starve state stated stately
+statement station stationary statistical statue statute stave stay
+steadily steady steal stealing steam steamer steel steep steer stem
+step stereotype sterile sterling stern sternum steward stick stiff
+stifle stigma still stimulate stimulus sting stir stirring stitch
+stock stocking stomach stone stony stool stoop stop stopping storage
+store storm stormy story stout straddle straight straightforward
+strain strained strait strand strange stranger strap stratagem
+strategic stratum straw streak stream street strength strengthen
+stress stretch strict strictly strife strike striking string stringed
+strip stripe strive stroke strong strongly structural structure
+struggle stubborn student studied studious study stuff stuffing
+stumble stump stun stunning stupefy stupid stupidity style subdue
+subdued subject subjected subjection sublime submission submissive
+submit suborder subordinate subscribe subscriber subscription
+subsequent subsequently subsidy substance substantial substantially
+substantive substitute substitution subtile subtle suburb suburban
+succeed success successful succession successive successor such suck
+sucker sucking sudden sue suffer suffering sufficient sufficiently
+suffix sugar suggest suggestion suit suitable suite sullen sulphate
+sulphide sulphur sulphuric summary summer summit summon summons super
+superb superficial superior supervise supervision supervisor
+supplement supply support supported supporter supportive suppose
+supposed supposedly suppress supreme sure surety surface surge surgeon
+surgery surgical surpass surplus surprise surrender surround
+surrounding surveillance survey surveying surveyor survival survivor
+susceptible suspect suspend suspended suspense suspension suspicion
+suspicious sustain sustainable sustained suture swallow sway sweat
+sweep sweeping sweet sweeten swell swelling swift swiftly swiftness
+swim swimming swing switch swollen sword syllable syllogism symbol
+symbolic symmetrical symmetry sympathetic sympathy symphony symptom
+syndrome synthesis system systematic tabernacle table tablet tabular
+tack tackle tactic tactical tag tail taint take taking talk talking
+tallow tally tame tangent tap tapering tapeworm tarnish tarsus tartar
+taste tasteless taxpayer teach teacher teaching team tear technical
+technological teens teeth telegraph telescope tell telltale temper
+temperament temperate temperature temple temporal temporarily
+temporary tempt tenacious tenant tend tendency tender tending tenor
+tense tension tent tenth tenure term terminal terminate termination
+terms terrain terrestrial terribly terrific terrify territory terror
+tertiary test testament testify testimony testing text textbook
+textile texture than thankfully that theatrical theft their theme
+themselves then theology theoretical theory therapist there thereafter
+thereby therefore thesis they thick thicken thickness thin thing think
+thinking third thirst thirty this thorax thorough thoroughly those
+though thought thoughtful thought-provoking thousand thread threaten
+three threshold thrilled thrive throat throne throng through
+throughout throw throwing thrown thrush thrust thrusting thumb thunder
+thus thwart tick ticket tide tight tighten till tiller tilt timber
+time timely timing tincture tinge tire tissue title titmouse to
+tobacco together token tolerance tolerate toll ton tone tongue tonic
+tonne tool tooth top torment torpedo tortoise torture toss total touch
+touching tough tournament toward towards tower town toxic trace
+tracing track tract tractable trade trademark trading tradition
+traffic tragedy tragic trail trailer train training trait transact
+transaction transcript transfer transform transformation transient
+transit translate translation transmission transmit transparency
+transparent transport transportation transverse trap trauma travel
+traveler traverse tread treason treasure treasury treat treatise
+treatment treaty treble tree tremendous tremulous trench trespass
+trial triangle triangular tribal tribe tribunal tributary tribute
+trick trickery trifle trifling trigger trillion trim trimming trinity
+trio trip triple triumph trivial troop trophy tropical trouble
+troubled trough trousers truck true truly trump trumpet trunk truss
+trust trustee truth tsunami tube tubular tuft tuition tumble tumbler
+tumor tumult tumultuous tune tunnel turbulent turkey turkish turn
+turning turnout turnover turnpike twelfth twelve twenty twice twin
+twist twisted twitch twofold tympanum type typical tyrant ulcer
+ultimate umbilicus umbrella unable unacceptable uncertain uncertainty
+uncommon uncover unctuous under undergo undergraduate underlying
+undermine understand understanding undertake undertaking undivided
+undo undoubtedly undue uneasiness uneasy unequal uneven unfeeling
+unfold unfortunate unhappy uniform uniformity uniformly unify union
+unit unite united unity univalve universal universe university unjust
+unlawful unlike unlimited unlucky unnatural unprecedented unstable
+until untimely unusual unveil unworthy upcoming upgrade uphold upon
+upper upright upward urge urgent urinary urine usage use used useful
+useless usual utensil uterus utility utilize utmost utter utterance
+utterly vacancy vacant vacation vacuum vagabond vagrant vague vain
+valence valid validity valley valuable value valued valve vanish
+vanity vapor variable variance variant variation varied varieties
+variety various varnish vary vascular vassal vast vault vegetable
+vehemence vehement vehicle veil vein velocity velvet venereal venomous
+vent ventilate ventral ventricle venture venus verb verbal verdict
+verge verify verse versed version versus vertebra vertebral vertical
+very vesicle vessel veteran vexation vexatious viable vibrant vibrate
+vibration vice vicinity vicious victory view viewpoint vigor vigorous
+villager villain vindicate vinegar violate violation violence violent
+violet virtue visa viscid viscous visible vision visionary visit vital
+vitality vitreous vivacity vocal vocation voice void volatile volcanic
+voltaic volume voluntary volunteer vomit vomiting voracious vote
+voting vow vowel voyage vulgar vulnerability vulnerable wager wagon
+waist wait walk walking wall wander wandering want wanting wanton
+warbler ward warehouse warfare warlike warm warming warmth warning
+warp warrant warranty warrior wash washing waste wasteful wasting
+watch watchful water watery wave weak weaken weakness wealth weapon
+wear wearing weary weather weave weaving wedge wedlock weed weekly
+weeping weigh weight weird welcome welfare well well-being were west
+western what whatever whatsoever wheat wheel when whence where whereby
+whether which while whilst whimsical whip whirl whisper whistle white
+whitish whoever whole wholly whose wicked wickedness wide widely widen
+widespread widow width wife wild will willing willingness willow wind
+winding windlass window windpipe wine wing winged winning winter wipe
+wire wisdom wise wish wit with withdraw withdrawal wither withered
+withhold within without witness wolf woman wonder wonderful wood
+wooden woody wool woolen word work workforce working workman workout
+workplace workshop world worldly worm worry worse worship worsted
+worth worthless worthwhile worthy wound wreath wreck wretched wrinkle
+wrist writ write writer writing written wrong wrongly wrought yard
+yarn year yearly yell yellow yellowish yield yielding yoke young
+youngster youth zigzag zinc`.split(/[\n\s]+/);
+
+    const punctuation = [',', ';', '-', '?'];
+    const randomize = document.getElementById('randomize');
+    const scramble = document.getElementById('scramble');
+
+    function shuffleFirstNChars(str, n) {
+	if (str.length < n) return str.split('').sort(() => Math.random() - 0.5).join('');
+
+	let chars = str.substring(0, n).split('');
+	for (let i = chars.length - 1; i > 0; i--) {
+	    const j = Math.floor(Math.random() * (i + 1));
+	    [chars[i], chars[j]] = [chars[j], chars[i]]; // swap elements
+	}
+	return chars.join('') + str.substring(n);
+    }
+
+    function generateSentence() {
+        let sentenceLength = Math.floor(Math.random() * 6) + 15; // Average sentence length varies around 20 words
+        let sentence = [];
+        for (let i = 0; i < sentenceLength; i++) {
+            sentence.push(words[Math.floor(Math.random() * words.length)]);
+            if (Math.random() < 0.15 && i !== 0 && i !== sentenceLength - 1) {
+                sentence.push(punctuation[Math.floor(Math.random() * punctuation.length)]);
+            }
+        }
+        return sentence.join(' ') + (Math.random() < 0.5 ? '.' : '?');
+    }
+
+    function updateOutput() {
+        for (let j = 0; j < 10; j++) {
+            const output = document.getElementById('output' + j);
+            const numSentences = Math.floor(Math.random() * 2) + 2; // Generate 2 or 3 sentences
+            let sentences = [];
+            for (let i = 0; i < numSentences; i++) {
+                sentences.push(generateSentence());
+            }
+	    var finalText;
+	    if (scramble.checked) {
+		finalText = shuffleFirstNChars(sentences.join(' '), 25); // scramble first 25 characters
+	    }else{
+		finalText = sentences.join(' ');
+	    }
+            output.textContent = finalText;
+            if (j === 0) {
+                navigator.clipboard.writeText(finalText).then(function() {
+                    console.log('First text copied to clipboard');
+                }, function(err) {
+                    console.error('Could not copy text: ', err);
+                });
+            }
+        }
+    }
+
+    function copyTextToClipboard(j) {
+        const text = document.getElementById('output' + j).textContent;
+        navigator.clipboard.writeText(text).then(function() {
+            console.log('Text copied to clipboard');
+        }, function(err) {
+            console.error('Could not copy text: ', err);
+        });
+    }
+
+    randomize.addEventListener('click', updateOutput);
+
+    for (let i = 0; i <= 9; i++) {
+        let buttonId = 'output' + i; // Construct the ID string
+        let button = document.getElementById(buttonId); // Get the button element by ID
+        if (button) { // Check if the button element exists
+            button.addEventListener('click', function() {
+                copyTextToClipboard(i); // Add click event listener that calls copyTextToClipboard
+            });
+        }
+    }
+});
+</script>
+<style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .output { margin-top: 1.5em; padding: .2em; }
+    button.sentence { text-align: left; }
+</style>
+</head>
+
+<body>
+<h1>Lexiconstructor v1.0.0</h1>
+<h3>by Peter Kaminski</h3>
+<p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+<p>Click the 'Random Eyes" button to generate random strings of words that look a little like sentences. The first set is automatically copied to the clipboard.</p>
+<p>Click any set of words to copy that set to the clipboard.</p>
+<p><button id="randomize">Random Eyes</button></p>
+<p><input type="checkbox" id="scramble"> <label for="scramble">Scramble first 25 characters</label></p>
+<div>
+  <div class="output"><button id="output0" class="sentence">1.</button></div>
+
+  <div class="output"><button id="output1" class="sentence">2.</button></div>
+
+  <div class="output"><button id="output2" class="sentence">3.</button></div>
+
+  <div class="output"><button id="output3" class="sentence">4.</button></div>
+
+  <div class="output"><button id="output4" class="sentence">5.</button></div>
+
+  <div class="output"><button id="output5" class="sentence">6.</button></div>
+
+  <div class="output"><button id="output6" class="sentence">7.</button></div>
+
+  <div class="output"><button id="output7" class="sentence">8.</button></div>
+
+  <div class="output"><button id="output8" class="sentence">9.</button></div>
+
+  <div class="output"><button id="output9" class="sentence">10.</button></div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2024 Peter Kaminski</p>
+  <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+</div>
+</body>
+</html>
