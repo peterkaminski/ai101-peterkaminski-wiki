@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Cyndi Coon
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frankifier v1.0.0</title>
+    <script>
+        function frankify() {
+            const hotDogWords = ["frankfurter", "wiener", "bun", "relish", "mustard", "ketchup", "grill", "sizzle", "sausage"];
+            let inputText = document.getElementById("textInput").value;
+            let words = inputText.split(' ');
+            let output = words.map((word, index) => {
+                // Randomly replace roughly half of the words
+                if (Math.random() > 0.5) {
+                    return hotDogWords[Math.floor(Math.random() * hotDogWords.length)];
+                } else {
+                    return word;
+                }
+            }).join(' ');
+            document.getElementById("outputText").innerText = output;
+            // Copy to clipboard
+            navigator.clipboard.writeText(output);
+        }
+    </script>
+</head>
+<body>
+    <h1>Frankifier v1.0.0</h1>
+    <h3>by Cyndi Coon</h3>
+    <p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+    <textarea id="textInput" placeholder="Type your text here..." rows="6" cols="50"></textarea><br>
+    <button onclick="frankify()" id="frankButton">Frankify!</button><br><br>
+    <div id="outputText" style="white-space: pre-wrap;"></div>
+
+<div class="footer">
+  <p>&copy; 2024 Cyndi Coon</p>
+  <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+
+</body>
+</html>
