@@ -2,6 +2,9 @@
 
 Here are direct links to the live session notes. This list is maintained by hand and may not be up-to-date; use [All Pages](/all-pages.html) to check for more.
 
+- [[Learn and Do with Peter Notes, 2024-04-25]]
+- [[Learn and Do with Peter Notes, 2024-04-18]]
+- [[Learn and Do with Peter Notes, 2024-04-17]]
 - [[Learn and Do with Peter Notes, 2024-04-11]]
 - [[Learn and Do with Peter Notes, 2024-04-03]]
 - [[Learn and Do with Peter Notes, 2024-03-29]]
