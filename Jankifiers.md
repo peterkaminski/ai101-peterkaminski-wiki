@@ -27,6 +27,7 @@ Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call a
 - [[Commifier.html]] - v1.0.1 - adds commas randomly
 - [[Essifier-es.html]] - v1.0.1 - adds "es" suffix to each word
 - [[Essifier.html]] - v1.0.1 - adds "s" suffix to each word (not very interesting)
+- [[Frankifier.html]] - v1.0.0 - adds hotdog atmosphere to your input
 - [[Froggifier.html]] - v1.0.0 - froggifies your text
 - [[Interleaver.html]] - v1.0.2 - interleaves two prompts word-by-word (like cars doing a zipper merge)
 - [[Janky Rhymifier.html]] - v1.0.0 - changes some words into janky rhymes of the original word
