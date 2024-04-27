@@ -8,6 +8,10 @@ We **have** to keep the utter simplicity and memorability of the basic prompt:
 
 But we also want some add-ons:
 
+- A "Jankifier Gallery", with icons for each jankifier, to make it easier and more fun to start a jankifier.
+	- icon for jankifier
+	- before/after images
+	- to make a separate jankifier subdomain or domain
 - Copyright, attribution, open source dedication (in progress)  
 - Standardization of interface (early ones don't copy to clipboard automatically)  
 - Slightly improved appearance (mostly some simple CSS improvements)  
