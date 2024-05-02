@@ -19,4 +19,4 @@ Example:
 ![[peterkaminski_ae186662-4202-4b29-9e22-d180877a74811.jpg]]
 
 ## As rendered on Mighty Networks
-![[CleanShot 2024-05-02 at 14.49.31@2x.png]]
+![[peterkaminski_ae186662-4202-4b29-9e22-d180877a74811-mighty-networks-screencap.png]]
