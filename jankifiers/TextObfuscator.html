@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Text Obfuscator</title>
+<script>
+function obfuscateText() {
+    var inputText = document.getElementById('inputText').value;
+    var obfuscatedText = btoa(unescape(encodeURIComponent(inputText))); // Base64 encoding
+    document.getElementById('outputText').value = obfuscatedText;
+    navigator.clipboard.writeText(obfuscatedText); // Copy to clipboard
+}
+</script>
+</head>
+<body>
+<h2>Text Obfuscator</h2>
+<p>Enter your text:</p>
+<textarea id="inputText" rows="4" cols="50"></textarea><br>
+<button onclick="obfuscateText()">Obfuscate it!</button>
+<p>Obfuscated text (also copied to clipboard):</p>
+<textarea id="outputText" rows="4" cols="50" readonly></textarea>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Dan Bashaw (danbashaw.com)
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Transcript Cleaner v1.0.0</title>
+    <h3>by Dan Bashaw</h3>
+    <style>
+        textarea {
+            width: 90%;
+            margin: 10px auto;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            display: block;
+        }
+        #outputArea {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 10px auto;
+        }
+        p {
+            margin: 0 0 20px 0; /* Adding spacing between paragraphs */
+        }
+    </style>
+</head>
+<body>
+    <h1>Zoom Transcript Cleaner v1.0.0</h1>
+    <p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+    <p>This little utility transforms Zoom transcripts into something resembling a conversation or a stage play script. To use it, download a Zoom transcript, and open the '.vtt' file by changing the file extension to '.txt'. The file will open in a text editor, so you can then copy and paste the rather ugly and hard to read transcript into the text box below. The Cleaner will remove timestamps, line numbers, duplicate speaker names, and reformat the remaining text into something nice for humans to read!</p>
+    <textarea id="inputText" rows="10" placeholder="Paste the Zoom transcript here..."></textarea>
+    <br>
+    <button onclick="cleanTranscript()">Clean Up!</button>
+    <h2>Cleaned Transcript</h2>
+    <div id="outputArea"></div>
+
+    <script>
+        function cleanTranscript() {
+            const input = document.getElementById('inputText').value;
+            const outputArea = document.getElementById('outputArea');
+            outputArea.innerHTML = ''; // Clear previous output
+            const lines = input.split('\n');
+            let currentSpeaker = '';
+            let currentText = '';
+
+            for (let line of lines) {
+                line = line.trim();
+                if (!line) continue; // skip empty lines
+
+                // Check for line numbers or timestamps and skip them
+                if (/^\d+$/.test(line) || /^\d{2}:\d{2}:\d{2}\.\d{3} --> \d{2}:\d{2}:\d{2}\.\d{3}$/.test(line)) {
+                    continue;
+                }
+
+                // Detect speaker names
+                const speakerMatch = line.match(/^(.*?):\s/);
+                if (speakerMatch) {
+                    const speaker = speakerMatch[1];
+                    if (speaker !== currentSpeaker) {
+                        if (currentSpeaker) {
+                            const para = document.createElement('p');
+                            para.innerHTML = '<b>' + currentSpeaker + '</b>: ' + currentText.trim();
+                            outputArea.appendChild(para);
+                        }
+                        currentSpeaker = speaker;
+                        currentText = line.substring(speaker.length + 2);
+                    } else {
+                        currentText += ' ' + line.substring(speaker.length + 2);
+                    }
+                } else {
+                    currentText += ' ' + line; // Append continuation of the speech without a speaker name
+                }
+            }
+
+            // Add the last speaker's text
+            if (currentSpeaker) {
+                const para = document.createElement('p');
+                para.innerHTML = '<b>' + currentSpeaker + '</b>: ' + currentText.trim();
+                outputArea.appendChild(para);
+            }
+        }
+    </script>
+    <div class="footer">
+        <p>&copy; 2024 Dan Bashaw</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+</body>
+</html>

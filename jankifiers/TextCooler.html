@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Text Cooler</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        text-align: center;
+    }
+    textarea, button {
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px;
+    }
+    #output {
+        margin-top: 20px;
+        font-size: 20px;
+        color: blue;
+    }
+</style>
+</head>
+<body>
+<h2>Text Cooler</h2>
+<textarea id="inputText" placeholder="Type your text here..." rows="4" cols="50"></textarea><br>
+<button onclick="coolText()">Cool it!</button>
+<div id="output"></div>
+<script>
+    function coolText() {
+        var inputText = document.getElementById('inputText').value;
+        var coolText = inputText.split(' ').map(word => word + "😎").join(' ');
+        document.getElementById('output').textContent = coolText;
+        navigator.clipboard.writeText(coolText);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Text Transformer</title>
+</head>
+<body>
+<h2>Text Transformer</h2>
+<p>Enter your text below, choose a transformation, and click "Chop More!" or "Chop Less!" to transform it.</p>
+<textarea id="textInput" rows="4" cols="50"></textarea><br><br>
+
+<input type="radio" id="halveFun" name="chopOption" value="2" checked>
+<label for="halveFun">Halve Fun</label><br>
+<input type="radio" id="thirdRail" name="chopOption" value="3">
+<label for="thirdRail">Third Rail</label><br>
+<input type="radio" id="goFourth" name="chopOption" value="4">
+<label for="goFourth">Go Fourth</label><br><br>
+
+<button onclick="chopText(true)">Chop More!</button>
+<button onclick="chopText(false)">Chop Less!</button>
+<p><strong>Output:</strong></p>
+<p id="textOutput"></p>
+
+<script>
+function chopText(more) {
+    var inputText = document.getElementById("textInput").value;
+    var chopRate = document.querySelector('input[name="chopOption"]:checked').value;
+    var outputText = "";
+    for (let i = 0; i < inputText.length; i++) {
+        if ((more && i % parseInt(chopRate) === 0) || (!more && i % parseInt(chopRate) !== 0)) {
+            outputText += inputText[i];
+        }
+    }
+    document.getElementById("textOutput").innerText = outputText;
+    navigator.clipboard.writeText(outputText);
+}
+</script>
+</body>
+</html>

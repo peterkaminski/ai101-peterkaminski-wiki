@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Text Encryptor</title>
+<script>
+function caesarCipher(str, shift) {
+    const output = str.replace(/[a-z]/gi, function(char) {
+        const startCode = char <= 'Z' ? 65 : 97;
+        return String.fromCharCode(((char.charCodeAt(0) - startCode + shift) % 26) + startCode);
+    });
+    return output;
+}
+
+function encryptText() {
+    const textInput = document.getElementById("textInput").value;
+    const encryptedText = caesarCipher(textInput, 3);
+    document.getElementById("output").textContent = encryptedText;
+    navigator.clipboard.writeText(encryptedText);
+}
+
+</script>
+</head>
+<body>
+<h2>Text Encryptor</h2>
+<label for="textInput">Enter your text:</label><br>
+<input type="text" id="textInput"><br><br>
+<button onclick="encryptText()">Encrypt Text</button><br><br>
+<h3>Encrypted Text:</h3>
+<p id="output"></p>
+
+    <div class="footer">
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+
+</body>
+</html>

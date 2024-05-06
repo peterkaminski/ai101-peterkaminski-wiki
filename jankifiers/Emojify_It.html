@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Emojify It!</title>
+</head>
+<body>
+<h1>Emojify It!</h1>
+<textarea id="userInput" placeholder="Type your text here..." rows="4" cols="50"></textarea><br>
+<button onclick="emojifyText()">Emojify it!</button>
+<p id="output"></p>
+
+<script>
+const emojis = ['😀', '😃', '😄', '😁', '😆', '😅', '😂', '🤣', '😊', '😇',
+                '🙂', '🙃', '😉', '😌', '😍', '🥰', '😘', '😗', '😙', '😚',
+                '😋', '😛', '😝', '😜', '🤪', '🤨', '🧐', '🤓', '😎', '🤩',
+                '🥳', '😏', '😒', '😞', '😔', '😟', '😕', '🙁', '☹️', '😣',
+                '😖', '😫', '😩', '🥺', '😢', '😭', '😤', '😠', '😡', '🤬'];
+
+function emojifyText() {
+    let inputText = document.getElementById('userInput').value;
+    let words = inputText.split(/\s+/);
+    let outputText = words.map((word, index) => {
+        // Replace approximately half of the words with emojis
+        if (Math.random() > 0.5) {
+            return emojis[Math.floor(Math.random() * emojis.length)];
+        } else {
+            return word;
+        }
+    }).join(' ');
+    document.getElementById('output').innerText = outputText;
+    copyToClipboard(outputText);
+}
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+        console.log('Text copied to clipboard');
+    }, function(err) {
+        console.error('Could not copy text: ', err);
+    });
+}
+</script>
+</body>
+</html>

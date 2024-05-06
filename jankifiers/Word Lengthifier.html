@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Text Formatter</title>
+<style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    textarea { width: 300px; height: 100px; margin-bottom: 10px; }
+    button { padding: 5px 10px; }
+    #output { margin-top: 20px; }
+</style>
+</head>
+<body>
+<h2>Text Formatter</h2>
+<textarea id="inputText" placeholder="Enter your text here..."></textarea><br>
+<button onclick="formatText()">Same Length</button>
+<div id="output"></div>
+
+<script>
+function formatText() {
+    let text = document.getElementById('inputText').value;
+    let words = text.split(/\s+/).filter(Boolean);
+    let formattedWords = [];
+    let currentString = '';
+    
+    words.forEach(word => {
+        currentString += word;
+        if (currentString.length >= 7) {
+            formattedWords.push(currentString.slice(0, 7));
+            currentString = currentString.slice(7);
+        }
+    });
+
+    if (currentString.length > 0) {
+        formattedWords.push(currentString); // Push the last bit, even if less than 7
+    }
+
+    let outputText = formattedWords.join(' ');
+    document.getElementById('output').textContent = outputText;
+
+    // Copy to clipboard without alert
+    navigator.clipboard.writeText(outputText).then(() => {
+        console.log('Text copied to clipboard!');
+    });
+}
+</script>
+</body>
+</html>

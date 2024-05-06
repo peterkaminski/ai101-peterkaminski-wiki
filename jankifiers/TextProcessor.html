@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Processor</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input, button { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Text Processor</h2>
+    <input type="text" id="inputText" placeholder="Enter some text here">
+    <button onclick="processText()">Process Text</button>
+    <div id="outputText"></div>
+
+    <script>
+        function processText() {
+            const input = document.getElementById('inputText').value;
+            const processed = input.toUpperCase();
+            document.getElementById('outputText').innerText = processed;
+
+            // Copying to clipboard
+            navigator.clipboard.writeText(processed);
+        }
+    </script>
+</body>
+</html>

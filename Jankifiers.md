@@ -18,7 +18,7 @@ Check out the [[Jankifier Publishing Checklist]] for detailed instructions. Do "
 
 Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call and we did a detailed walkthrough on [[Learn and Do with Peter, 2024-03-29]].
 
-## Usable Jankifiers
+## Usable Image Generator Jankifiers
 
 - [[Adjective Adder.html]] - v1.0.0 - adds random outlandish adjectives before each noun
 - [[Adverbifier.html]] - v1.0.0 - adds some random adverbs
@@ -42,6 +42,10 @@ Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call a
 - [[Sortor.html]] - v1.0.0 - Alphabetically sorts the letters in each word
 - [[WikiWords.html]] - pulls two random sentences from a random Wikipedia article
 - [[WorldArt Text Modifier.html]] - modifies your text to include world art-related terms
+
+## Utility Jankifiers
+
+- [[Zoom_Transcript_Cleaner_v1_0_0.html]] - transforms Zoom transcripts into easy-to-read text
 
 ## Pre-release Jankifiers
 
