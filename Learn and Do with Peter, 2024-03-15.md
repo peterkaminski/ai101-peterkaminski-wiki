@@ -2,11 +2,13 @@
 
 YouTube: <https://youtu.be/O6NZgvyU5Do>
 
-Notes: [[Learn and Do with Peter Notes, 2024-03-15]]
+Recorded live AI Salon / Learn and Do with Peter session on AI topics.
 
 **Next:** [[Learn and Do with Peter, 2024-03-16]]
 
 **Previous:** [[Learn and Do with Peter, 2024-03-10]]
+
+**Notes:** [[Learn and Do with Peter Notes, 2024-03-15]]
 
 ## AI Summary (hopefully useful, may be inaccurate)
 

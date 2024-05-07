@@ -8,6 +8,8 @@ Recorded live AI Salon / Learn and Do with Peter session on AI topics.
 
 **Previous:** [[Learn and Do with Peter, 2024-03-15]]
 
+**Notes:** [[Learn and Do with Peter Notes, 2024-03-16]]
+
 ## AI Summary (hopefully useful, may be inaccurate)
 
 ### Quick Recap

@@ -2,13 +2,13 @@
 
 The overall topic today was "Why (or why not) to build our own LLM front-end", with lots of smaller topics mixed in. The topic may be continued tomorrow, unless attendees want to switch to a different topic.
 
-YouTube: <https://youtu.be/uIB7jz6h_Vo>
-
-Notes: [[Learn and Do with Peter Notes, 2024-03-09]]
+**YouTube:** <https://youtu.be/uIB7jz6h_Vo>
 
 **Next:** [[Learn and Do with Peter, 2024-03-10]]
 
 **Previous:** [[AI 101 Live Session, 2024-03-02]]
+
+**Notes:** [[Learn and Do with Peter Notes, 2024-03-09]]
 
 ## AI Summary (hopefully useful, may be inaccurate)
 

@@ -6,9 +6,11 @@ Recorded live AI Salon / Learn and Do with Peter session on AI topics.
 
 In this episode, we covered [[Jankifiers]].
 
-**Next:** _link coming soon_
+**Next:** [[Learn and Do with Peter, 2024-04-03]]
 
 **Previous:** [[Learn and Do with Peter, 2024-03-24]]
+
+**Notes:** [[Learn and Do with Peter Notes, 2024-03-29]]
 
 ## AI Summary (hopefully useful, may be inaccurate)
 
