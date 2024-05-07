@@ -1,10 +1,10 @@
 # Learn and Do with Peter, 2024-03-29
 
-YouTube: <https://www.youtube.com/watch?v=gaRZ5f3GDOM>
-
 Recorded live AI Salon / Learn and Do with Peter session on AI topics.
 
 In this episode, we covered [[Jankifiers]].
+
+**YouTube:** <https://www.youtube.com/watch?v=gaRZ5f3GDOM>
 
 **Next:** [[Learn and Do with Peter, 2024-04-03]]
 
