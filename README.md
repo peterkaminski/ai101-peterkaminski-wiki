@@ -16,8 +16,16 @@ Click on the name of a session to go to that session's web page.
 
 There is also a hand-maintained list of [[Live Session Notes]].
 
+###  May 2024
+
+- [[Learn and Do with Peter, 2024-05-06]]
+- [[Learn and Do with Peter, 2024-05-03]]
+
 ### April 2024
 
+- [[Learn and Do with Peter, 2024-04-26]]
+- [[Learn and Do with Peter, 2024-04-25]]
+- [[Learn and Do with Peter, 2024-04-18]]
 - [[Learn and Do with Peter, 2024-04-03]] - Midjourney character reference, jankifiers, copyright, open source
 
 ### March 2024
