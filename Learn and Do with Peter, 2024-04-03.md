@@ -4,7 +4,7 @@ Recorded live AI Salon / Learn and Do with Peter session on AI topics.
 
 **YouTube:** <https://youtu.be/uk4H5cd42Ng>
 
-**Next:** [[Learn and Do with Peter, 2024-04-17]]
+**Next:** [[Learn and Do with Peter, 2024-04-11]]
 
 **Previous:** [[Learn and Do with Peter, 2024-03-29]]
 

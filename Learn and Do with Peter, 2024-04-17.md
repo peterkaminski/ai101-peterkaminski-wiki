@@ -6,7 +6,7 @@ Recorded live AI Salon / Learn and Do with Peter session on AI topics.
 
 **Next:** [[Learn and Do with Peter, 2024-04-18]]
 
-**Previous:** [[Learn and Do with Peter, 2024-04-03]]
+**Previous:** [[Learn and Do with Peter, 2024-04-11]]
 
 **Notes:** [[Learn and Do with Peter Notes, 2024-04-17]]
 
