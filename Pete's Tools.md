@@ -31,3 +31,9 @@ _The "Massive Web" System_
 ## Computer Admin Tools
 
 - Homebrew - Mac package manager for Unix tools and other software
+
+## Community and Coordination Tools
+
+- Mattermost - an open source, self-hostable chat server similar to Slack
+- Discourse - an open source, self-hostable forum server
+- [[Crab Fit]] - a team scheduling tool to help choose meeting times
