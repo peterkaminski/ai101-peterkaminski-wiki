@@ -4,7 +4,20 @@
 
 ## Discussion Space
 
-Our main discussion space is in **[Peter's AI 101](https://aisalon.mn.co/share/phFsHUTlVUiSHKGt)** guild on the **AI Salon** community site. Free **AI Salon** registration is required.
+Our main discussion space is in **[Learn and Do with Peter](https://aisalon.mn.co/spaces/12680311/feed)** guild on the **AI Salon** community site. Free **AI Salon** registration is required to participate.
+
+## Topics
+
+_Click the topic name to go to an index page for that topic._
+
+- [[AI 101 Building Blocks]] - where to start from the ground up
+- [[Midjourney]] - a very good image generator
+- [[Obsidian+Git]] - useful for GPT makers and ChatGPT users
+- [[Jankifiers]] - web pages that can "jankify" text, such as prompts for AI (aka how to write small interactive apps, no programming experience needed!)
+- [[API]] - an API is used by computer systems to exchange data and perform operations, and can be used by GPTs
+- [[Python]] - a popular programming language (sometimes knowing a little about it is helpful for AI stuff)
+- [[Upcoming Topics]] - topics that don't have their own pages yet
+- [[Resources]] - other highly useful learning materials
 
 ## Live Session Recordings
 
@@ -70,19 +83,6 @@ There is also a hand-maintained list of [[Live Session Notes]].
 ### YouTube Playlist
 
 The videos are also listed on YouTube in an [AI 101 YouTube Playlist](https://youtube.com/playlist?list=PLADGyQqAcmirQAq6Kp9r75uFQrq-THPhi) if that is convenient for you.
-
-## Topics
-
-_Click the topic name to go to an index page for that topic._
-
-- [[AI 101 Building Blocks]] - where to start from the ground up
-- [[Midjourney]] - a very good image generator
-- [[Obsidian+Git]] - useful for GPT makers and ChatGPT users
-- [[Jankifiers]] - web pages that can "jankify" text, such as prompts for AI
-- [[API]] - an API is used by computer systems to exchange data and perform operations, and can be used by GPTs
-- [[Python]] - a popular programming language (sometimes knowing a little about it is helpful for AI stuff)
-- [[Upcoming Topics]] - topics that don't have their own pages yet
-- [[Resources]] - other highly useful learning materials
 
 ## Helping Maintain This Website
 
