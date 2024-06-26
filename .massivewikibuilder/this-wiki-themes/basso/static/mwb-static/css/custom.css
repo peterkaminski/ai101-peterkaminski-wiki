@@ -2,7 +2,7 @@
 
 /* don't let <pre> get crazy */
 pre {
-    max-width: 90%; /* Responsive design */
+    max-width: 60%; /* Responsive design */
     margin: 0 auto; /* Center the pre block */
     white-space: pre-wrap; /* Ensure long lines wrap within the pre block */
     word-wrap: break-word; /* Break long words to fit within the max width */
