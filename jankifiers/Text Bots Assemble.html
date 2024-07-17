@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Bots Assemble! v1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea, input, button {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Text Bots Assemble! v1</h1>
+    <p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers</a>.</p>
+    <p>Enter or paste your prefix, suffix, and multiple lines of text, click button, then click resulting lines to copy to clipboard.</p>
+    <p><small><em>No actual <strong>bots</strong> involved, the author just watched too many cartoons as a child.</em></small></p>
+    <textarea id="textInput" rows="10" placeholder="Enter multiple lines of text..."></textarea>
+    <input type="text" id="prefixInput" placeholder="Enter prefix">
+    <input type="text" id="suffixInput" placeholder="Enter suffix">
+    <button onclick="assembleTextBots()">Text Bots Assemble!</button>
+    
+    <div class="button-container" id="buttonContainer"></div>
+
+    <script>
+        function assembleTextBots() {
+            const textInput = document.getElementById('textInput').value;
+            const prefix = document.getElementById('prefixInput').value;
+            const suffix = document.getElementById('suffixInput').value;
+            const buttonContainer = document.getElementById('buttonContainer');
+            
+            // Clear previous buttons
+            buttonContainer.innerHTML = '';
+
+            // Split the input into lines
+            const lines = textInput.split('\n');
+            
+            // Create buttons for each line
+            lines.forEach(line => {
+                if (line.trim() !== '') {
+                    const button = document.createElement('button');
+                    const buttonText = prefix + line + suffix;
+                    button.innerText = buttonText;
+                    button.onclick = function() {
+                        copyToClipboard(buttonText);
+                    };
+                    buttonContainer.appendChild(button);
+                }
+            });
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                // alert('Copied to clipboard: ' + text);
+            }).catch(err => {
+                alert('Failed to copy: ' + err);
+            });
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </footer>
+
+</body>
+</html>

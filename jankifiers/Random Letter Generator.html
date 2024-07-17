@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright © 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Letter Generator v1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 1rem;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        #result {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            word-wrap: break-word;
+        }
+        #alert {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #d4edda;
+            color: #155724;
+            border-radius: 4px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Letter Generator v1</h1>
+	<p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers</a>.</p>
+	<p>Generates 25 random letters separated by spaces.</p>
+        <button id="generateBtn">Generate and Copy</button>
+        <div id="result"></div>
+        <div id="alert"></div>
+        <p>&copy; 2024 Peter Kaminski</p>
+        <p>Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    </div>
+
+    <script>
+        const generateBtn = document.getElementById('generateBtn');
+        const result = document.getElementById('result');
+        const alert = document.getElementById('alert');
+
+        function generateRandomLetters() {
+            const letters = 'abcdefghijklmnopqrstuvwxyz';
+            let generatedString = '';
+            for (let i = 0; i < 25; i++) {
+                generatedString += letters.charAt(Math.floor(Math.random() * letters.length));
+                if (i < 24) generatedString += ' ';
+            }
+            return generatedString;
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert.textContent = 'The generated string has been copied to your clipboard.';
+                alert.style.display = 'block';
+                setTimeout(() => {
+                    alert.style.display = 'none';
+                }, 3000);
+            });
+        }
+
+        generateBtn.addEventListener('click', () => {
+            const randomString = generateRandomLetters();
+            result.textContent = `${randomString}`;
+            copyToClipboard(randomString);
+        });
+    </script>
+</body>
+</html>

@@ -36,10 +36,12 @@ Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call a
 - [[Lexiconstructor.html]] - v1.0.0 - generates random strings of words
 - [[Numberfier.html]] - changes random words into numbers
 - [[Raccoonify.html]] - v1.0.0 - raccoonifies your text
+- [[Random Letter Generator.html]] - v1 - generates random letters
 - [[RandomJourney.html]] - randomizes the stylize, chaos, and weird values of your Midjourney prompt
 - [[Reverse Text.html]] - v1.0.0 - reverses the input text character by character
 - [[Reverse-Jankifier.html]] - v1.0.1 - swaps pairs of words
 - [[Sortor.html]] - v1.0.0 - Alphabetically sorts the letters in each word
+- [[Text Bots Assemble.html]] - v1 - adds a prefix and suffix to multiple lines of text
 - [[WikiWords.html]] - pulls two random sentences from a random Wikipedia article
 - [[WorldArt Text Modifier.html]] - modifies your text to include world art-related terms
 
