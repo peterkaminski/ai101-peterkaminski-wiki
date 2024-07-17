@@ -16,6 +16,7 @@ _Click the topic name to go to an index page for that topic._
 - [[Jankifiers]] - web pages that can "jankify" text, such as prompts for AI (aka how to write small interactive apps, no programming experience needed!)
 - [[API]] - an API is used by computer systems to exchange data and perform operations, and can be used by GPTs
 - [[Python]] - a popular programming language (sometimes knowing a little about it is helpful for AI stuff)
+- [[Retrieval Augmented Generation]] - a way for an LLM to use information from a large corpus of documents
 - [[Upcoming Topics]] - topics that don't have their own pages yet
 - [[Resources]] - other highly useful learning materials
 
