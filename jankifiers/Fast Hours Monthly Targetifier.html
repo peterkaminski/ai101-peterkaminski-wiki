@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- 
+    Copyright 2024 Peter Kaminski
+    Licensed under the MIT License
+    https://ai101.peterkaminski.wiki/jankifiers
+    https://github.com/peterkaminski/ai101-peterkaminski-wiki/jankifiers/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Hours Monthly Targetifier v1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .app-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+        .input-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #374151;
+        }
+        .input-field {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .submit-button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .submit-button:hover {
+            background-color: #2563eb;
+        }
+        .result-container {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background-color: #f3f4f6;
+            border-radius: 4px;
+        }
+        .result-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .result-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .result-list li {
+            margin-bottom: 0.25rem;
+        }
+        .result-message {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .result-message.at-or-below {
+            background-color: #d1fae5;
+            border: 2px solid #059669;
+            color: #065f46;
+        }
+        .result-message.above {
+            background-color: #fee2e2;
+            border: 2px solid #dc2626;
+            color: #991b1b;
+        }
+        .flex-container {
+            display: flex;
+            gap: 3rem;
+        }
+        .flex-item {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="app-container">
+        <h1 class="text-3xl font-bold mb-6">Fast Hours Monthly Targetifier v1</h1>
+	<p>Read more <a href="https://ai101.peterkaminski.wiki/jankifiers" target="_blank">About Jankifiers.</a></p>
+	<p>Enter your Usage Details numbers from your <a target="_blank" href="https://www.midjourney.com/account">Midjourney Account Dashboard</a> and calculate how you're doing on your Fast Hours &quot;budget&quot; this month. Results are approximate, accuracy is not guaranteed, check by doing your own math.</p>
+	<p><small><em>This page and its author have no affiliation with Midjourney. The software is provided as-is, without warranty or acceptance of liability. See MIT License.</em></small></p>
+        <form id="trackingForm">
+            <div class="input-group">
+                <label for="rolloverDay" class="input-label">Rollover Day (1-31) (from Renewal Date)</label>
+                <input type="number" id="rolloverDay" name="rolloverDay" min="1" max="31" required class="input-field">
+            </div>
+            <div class="input-group">
+                <label for="planHours" class="input-label">Plan Hours</label>
+                <select id="planHoursSelect" class="input-field mb-2">
+                    <option value="">Select or enter manually</option>
+                    <option value="3.3">3.3 Basic</option>
+                    <option value="15">15 Standard</option>
+                    <option value="30">30 Pro</option>
+                    <option value="60">60 Mega</option>
+                </select>
+                <input type="number" id="planHours" name="planHours" step="0.1" required class="input-field" placeholder="Enter manually if not in list">
+            </div>
+            <div class="input-group flex-container">
+                <div class="flex-item">
+                    <label for="availableHours" class="input-label">Fast Hours Available "h" (0-60)</label>
+                    <input type="number" id="availableHours" name="availableHours" min="0" max="60" required class="input-field">
+                </div>
+                <div class="flex-item">
+                    <label for="availableMinutes" class="input-label">Fast Hours Available "m" (0-59)</label>
+                    <input type="number" id="availableMinutes" name="availableMinutes" min="0" max="59" required class="input-field">
+                </div>
+            </div>
+            <button type="submit" class="submit-button">Calculate</button>
+        </form>
+        <div id="result" class="result-container hidden"></div>
+	<div>
+          <p>Copyright 2024 <a href="mailto:kaminski@istori.com">Peter Kaminski</a></p>
+          <p>Free to use and distribute. Open source, licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+	</div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('trackingForm');
+            const result = document.getElementById('result');
+            const planHoursSelect = document.getElementById('planHoursSelect');
+            const planHoursInput = document.getElementById('planHours');
+
+            // Load saved values from localStorage
+            ['rolloverDay', 'planHours', 'availableHours', 'availableMinutes'].forEach(id => {
+                const input = document.getElementById(id);
+                const savedValue = localStorage.getItem(id);
+                if (savedValue) input.value = savedValue;
+            });
+
+            // Handle plan hours selection
+            planHoursSelect.addEventListener('change', (e) => {
+                if (e.target.value) {
+                    planHoursInput.value = e.target.value;
+                }
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                // Save input values to localStorage
+                ['rolloverDay', 'planHours', 'availableHours', 'availableMinutes'].forEach(id => {
+                    const input = document.getElementById(id);
+                    localStorage.setItem(id, input.value);
+                });
+
+                const rolloverDay = parseInt(document.getElementById('rolloverDay').value);
+                const planHours = parseFloat(planHoursInput.value);
+                const availableHours = parseInt(document.getElementById('availableHours').value);
+                const availableMinutes = parseInt(document.getElementById('availableMinutes').value);
+
+                const now = new Date();
+                const currentDay = now.getDate();
+                const currentMonth = now.getMonth();
+                const currentYear = now.getFullYear();
+
+                let lastRollover = new Date(currentYear, currentMonth, rolloverDay);
+                if (currentDay < rolloverDay) {
+                    lastRollover.setMonth(lastRollover.getMonth() - 1);
+                }
+
+                let nextRollover = new Date(lastRollover);
+                nextRollover.setMonth(nextRollover.getMonth() + 1);
+
+                const daysSinceRollover = (now - lastRollover) / (1000 * 60 * 60 * 24);
+                const daysBetweenRollovers = (nextRollover - lastRollover) / (1000 * 60 * 60 * 24);
+
+                const targetFraction = daysSinceRollover / daysBetweenRollovers;
+                const availableFraction = (availableHours + availableMinutes / 60) / planHours;
+                const usedFraction = 1 - availableFraction;
+
+                let message = `
+                    <h2 class="result-title">Calculation Details:</h2>
+                    <ul class="result-list">
+                        <li>Last Rollover Date: ${lastRollover.toDateString()}</li>
+                        <li>Next Rollover Date: ${nextRollover.toDateString()}</li>
+                        <li>Days Since Rollover: ${daysSinceRollover.toFixed(2)}</li>
+                        <li>Days Between Rollovers: ${daysBetweenRollovers.toFixed(2)}</li>
+                        <li>Target Fraction: ${(targetFraction * 100).toFixed(2)}%</li>
+                        <li>Available Fraction: ${(availableFraction * 100).toFixed(2)}%</li>
+                        <li>Used Fraction: ${(usedFraction * 100).toFixed(2)}%</li>
+                    </ul>
+                `;
+
+                if (usedFraction > targetFraction) {
+                    message += `<p class="result-message above">Result: You are above target. You've used ${(usedFraction * 100).toFixed(2)}% of your plan, but the target is ${(targetFraction * 100).toFixed(2)}%.</p>`;
+                } else {
+                    message += `<p class="result-message at-or-below">Result: You are at or below target. You've used ${(usedFraction * 100).toFixed(2)}% of your plan, and the target is ${(targetFraction * 100).toFixed(2)}%.</p>`;
+                }
+
+                result.innerHTML = message;
+                result.classList.remove('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>

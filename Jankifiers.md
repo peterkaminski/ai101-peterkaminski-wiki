@@ -20,33 +20,34 @@ Jankifiers were introduced on the [[Learn and Do with Peter, 2024-03-24]] call a
 
 ## Usable Image Generator Jankifiers
 
-- [[Adjective Adder.html]] - v1.0.0 - adds random outlandish adjectives before each noun
-- [[Adverbifier.html]] - v1.0.0 - adds some random adverbs
-- [[Catifier.html]] - v1.0.0 - catifies your text
-- [[Chopper.html]] - v1.0.0 - removes every nth character from your input
-- [[Commifier.html]] - v1.0.1 - adds commas randomly
-- [[Essifier-es.html]] - v1.0.1 - adds "es" suffix to each word
-- [[Essifier.html]] - v1.0.1 - adds "s" suffix to each word (not very interesting)
-- [[Frankifier.html]] - v1.0.0 - adds hotdog atmosphere to your input
-- [[Froggifier.html]] - v1.0.0 - froggifies your text
-- [[Interleaver.html]] - v1.0.2 - interleaves two prompts word-by-word (like cars doing a zipper merge)
-- [[Janky Rhymifier.html]] - v1.0.0 - changes some words into janky rhymes of the original word
-- [[JunglefyJankifier.html]] - v1.0.0 - add some jungle atmosphere to your input
-- [[Letterrific.html]] - v1.0.0 - add a random letter between each existing character, good with small prompts
-- [[Lexiconstructor.html]] - v1.0.0 - generates random strings of words
+- [[Adjective Adder.html]] - adds random outlandish adjectives before each noun
+- [[Adverbifier.html]] - adds some random adverbs
+- [[Catifier.html]] - catifies your text
+- [[Chopper.html]] - removes every nth character from your input
+- [[Commifier.html]] - adds commas randomly
+- [[Essifier-es.html]] - adds "es" suffix to each word
+- [[Essifier.html]] - adds "s" suffix to each word (not very interesting)
+- [[Frankifier.html]] - adds hotdog atmosphere to your input
+- [[Froggifier.html]] - froggifies your text
+- [[Interleaver.html]] - interleaves two prompts word-by-word (like cars doing a zipper merge)
+- [[Janky Rhymifier.html]] - changes some words into janky rhymes of the original word
+- [[JunglefyJankifier.html]] - add some jungle atmosphere to your input
+- [[Letterrific.html]] - add a random letter between each existing character, good with small prompts
+- [[Lexiconstructor.html]] - generates random strings of words
 - [[Numberfier.html]] - changes random words into numbers
-- [[Raccoonify.html]] - v1.0.0 - raccoonifies your text
+- [[Raccoonify.html]] - raccoonifies your text
 - [[Random Letter Generator.html]] - v1 - generates random letters
 - [[RandomJourney.html]] - randomizes the stylize, chaos, and weird values of your Midjourney prompt
-- [[Reverse Text.html]] - v1.0.0 - reverses the input text character by character
-- [[Reverse-Jankifier.html]] - v1.0.1 - swaps pairs of words
-- [[Sortor.html]] - v1.0.0 - Alphabetically sorts the letters in each word
-- [[Text Bots Assemble.html]] - v1 - adds a prefix and suffix to multiple lines of text
+- [[Reverse Text.html]] - reverses the input text character by character
+- [[Reverse-Jankifier.html]] - swaps pairs of words
+- [[Sortor.html]] - Alphabetically sorts the letters in each word
+- [[Text Bots Assemble.html]] - adds a prefix and suffix to multiple lines of text
 - [[WikiWords.html]] - pulls two random sentences from a random Wikipedia article
 - [[WorldArt Text Modifier.html]] - modifies your text to include world art-related terms
 
 ## Utility Jankifiers
 
+- [[Fast Hours Monthly Targetifier.html]] - calculate how you're doing on your Midjourney Fast Hours "budget" this month
 - [[Zoom_Transcript_Cleaner_v1_0_0.html]] - transforms Zoom transcripts into easy-to-read text
 
 ## Pre-release Jankifiers
