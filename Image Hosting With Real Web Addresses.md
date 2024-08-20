@@ -1,47 +1,80 @@
 # Image Hosting With Real Web Addresses
 
-Sometimes you have need to post an image file to the web for inclusion in web pages or other web-accessible databases, and you need to have a real web address (URL) for the image, not a link to a page it's on or a share link from a cloud drive service, etc.
+## Introduction
 
-(Note: if you want to have video hosted, it's more complicated because video needs a player application on the server. Consider using YouTube, Vimeo, or <https://bunny.net/> for video.)
+Sometimes you need to post an image file to the web for inclusion in web pages or other web-accessible databases. In these cases, you need a real web address (URL) for the image, not a link to a page it's on or a share link from a cloud drive service.
 
-Tradeoffs for choosing a service to host your images include:
+> **Note:** For video hosting, consider using YouTube, Vimeo, or [bunny.net](https://bunny.net/). Video hosting is more complex due to the need for a player application on the server.
 
-- cost / advertising
-- simplicity of upload / download
-- file size limits
-- simplicity of account creation and account management
-- simplicity of file deletion years later, perhaps by you or someone cleaning up after you
+## Choosing a Service
 
-Some services to consider:
+When selecting an image hosting service, consider these factors:
 
-- Backblaze B2
-- Amazon AWS S3
-- Imgur
+- Cost / Advertising
+- Ease of upload / download
+- File size limits
+- Simplicity of account creation and management
+- Ease of file deletion in the future
 
-As of 2024-08, I (Pete) recommend Backblaze for most people. The other services above, and even more, may be good choices as well, but Backblaze is a very good, easy choice for most people.
+## Recommended Services
 
-## Backblaze B2
+As of August 2024, here are some services to consider:
 
-Backblaze is a company that offers bulk data storage. They have a good track record and have been around for a while. Ask an LLM or do some web searches to get an idea of who they are and why they're good.
+1. Backblaze B2 (Recommended for most people)
+2. Amazon AWS S3
+3. Imgur
 
-Backblaze B2 is their offering which is similar to AWS S3, but ~4x cheaper, and since all Backblaze does is storage, account setup and bucket management is much easier than for AWS.
+## Backblaze B2: An Overview
 
-Check current pricing: <https://www.backblaze.com/cloud-storage/pricing>. As of 2024-08, it's US $6/TB/month. That works out to about US $0.60/GB/month.
+Backblaze is a reputable company offering bulk data storage. Their B2 service is similar to AWS S3 but approximately 4 times cheaper, and much easier to set up.
 
-Here's a quick overview to start storing images that have real web addresses. Please [[contact Peter Kaminski]] with any problems or suggestions to expand this overview.
+### Pricing
 
-- Sign up for Backblaze B2: <https://www.backblaze.com/sign-up/cloud-storage>
-- The first time you set up B2, you need to create a "bucket", which is like a folder inside the B2 service. It should have a name that is unique around the world, so not "images", but something like "peterkaminski-images". After this first setup, you can continue to use the same bucket for all your images.
-- To keep things organized, you can optionally make a bucket for one kind of use, or for each project, for each year of upload, etc. Another thing to consider, if you want to delete a bunch of files to clean up, you can delete a whole bucket at once.
-- When you're signed into Backblaze, on the left under "B2 Cloud Storage", click "Buckets".
-- Click "Create a Bucket" and follow the instructions. Suggested settings for this use:
-  - Files in Bucket are: Private
-  - Default Encryption: Disable
-  - Object Lock: Disable
-- After the bucket is created, find it in your list of buckets, and click "Upload/Download".
-- Click the "Upload" button, and upload an image or a folder.
-- After the image is uploaded, click the circle-I "information" icon. You will find "Friendly URL" and "S3 URL". Use either of those as your image's real web address. If you don't know which one to use, pick the "S3" URL, as it has a standardized format.
-- If you ever want to delete a bucket, click "Buckets" to get to the list of buckets. Click "Bucket Settings", then "Delete Bucket". Of course, all images in that bucket will no longer be available on the web if you delete the bucket.
+Check current pricing at [Backblaze Cloud Storage Pricing](https://www.backblaze.com/cloud-storage/pricing). As of August 2024, it's US $6/TB/month (approximately US $0.60/GB/month).
 
-There are a number of third-party free and paid applications which allow you to copy files from your computer to B2. These may be easier for bulk copies, but you'll have to figure out how to know what your files' real web addresses are. This isn't too hard, but it's currently not covered in this short overview.
+### Getting Started with Backblaze B2
 
+1. **Sign up**: Visit [Backblaze B2 Sign Up](https://www.backblaze.com/sign-up/cloud-storage)
+
+2. **Create a bucket**:
+   - Sign in to Backblaze
+   - Under "B2 Cloud Storage", click "Buckets"
+   - Click "Create a Bucket"
+   - Choose a unique name (e.g., "yourusername-images")
+   - Recommended settings:
+     - Files in Bucket: Private
+     - Default Encryption: Disable
+     - Object Lock: Disable
+
+3. **Upload files**:
+   - Find your bucket in the list and click "Upload/Download"
+   - Click the "Upload" button
+   - Select an image or folder to upload
+   - Do the same thing to upload as many files as you need to
+
+4. **Get the image URL**:
+   - After uploading, click the circle-I "information" icon
+   - Use either the "Friendly URL" or "S3 URL" (prefer S3 URL if you're not sure)
+
+### Managing Your Buckets
+
+- **Create multiple buckets**: Optionally, consider creating separate buckets for organizing different projects, years, or usage types
+- **Delete a bucket**: 
+  1. Click "Buckets" to see the list
+  2. Click "Bucket Settings"
+  3. Click "Delete Bucket"
+
+> **Warning:** Deleting a bucket removes all images within it from the web
+
+### Advanced Usage
+
+For bulk file transfers, consider using third-party applications (free or paid) that can copy files from your computer to B2. Note that you'll need to determine how to find your files' web addresses when using these tools.
+
+This page mentions some applications: [Making Cloud Storage Easy: Backing Up From Desktop to the Cloud](https://www.backblaze.com/blog/cloud-storage-made-easy/)
+
+Rclone is Pete's favorite, but it's a command-line tool, which may be too advanced for your purposes.
+## Conclusion
+
+This guide primarily focuses on Backblaze B2 as a recommended solution for most users. However, explore other options like Amazon AWS S3 or Imgur if they better suit your needs.
+
+For any questions or suggestions to improve this guide, please [[contact Peter Kaminski]].
