@@ -30,6 +30,9 @@ Click on the name of a session to go to that session's web page.
 
 There is also a hand-maintained list of [[Live Session Notes]].
 
+### August 2024
+
+- [[Learn and Do with Peter, 2024-08-14]]
 ###  May 2024
 
 - [[Learn and Do with Peter, 2024-05-06]]
