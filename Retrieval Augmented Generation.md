@@ -12,6 +12,8 @@ _may be useful or not, no promises_
 
 [https://python.langchain.com/v0.2/docs/tutorials/rag/](https://python.langchain.com/v0.2/docs/tutorials/rag/)
 
+<https://python.langchain.com/v0.2/docs/tutorials/local_rag/>
+
 [https://www.reddit.com/r/LangChain/comments/1cyjfap/best_stack_for_rag/](https://www.reddit.com/r/LangChain/comments/1cyjfap/best_stack_for_rag/)
 
 [https://docs.llamaindex.ai/en/stable/getting_started/concepts/#retrieval-augmented-generation-rag](https://docs.llamaindex.ai/en/stable/getting_started/concepts/#retrieval-augmented-generation-rag)
