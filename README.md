@@ -17,6 +17,7 @@ _Click the topic name to go to an index page for that topic._
 - [[API]] - an API is used by computer systems to exchange data and perform operations, and can be used by GPTs
 - [[Python]] - a popular programming language (sometimes knowing a little about it is helpful for AI stuff)
 - [[Retrieval Augmented Generation]] - a way for an LLM to use information from a large corpus of documents
+- [[Podcast Generators]] - a functionality popularized by NotebookLM
 - [[Upcoming Topics]] - topics that don't have their own pages yet
 - [[Resources]] - other highly useful learning materials
 
@@ -30,9 +31,14 @@ Click on the name of a session to go to that session's web page.
 
 There is also a hand-maintained list of [[Live Session Notes]].
 
+### October 2024
+
+- [[Learn and Do with Peter, 2024-10-09]]
+
 ### August 2024
 
 - [[Learn and Do with Peter, 2024-08-14]]
+
 ###  May 2024
 
 - [[Learn and Do with Peter, 2024-05-06]]
