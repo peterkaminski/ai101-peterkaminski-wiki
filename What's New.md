@@ -4,6 +4,10 @@ _This page is maintained by hand, and it's currently out of date._
 
 _Check [All Pages](/all-pages.html)  for an automated list, and click the column you want to sort by._
 
+## 2025-05-01
+
+I (Pete) did some small edits on the home page and elsewhere, referring to things more in the past tense, since AI 101 / Learn and Do with Peter is in indefinite hiatus.
+
 ## 2024-02-07
 
 - [[How to use exiftool to retrieve the image prompt from a Midjourney PNG file]]
@@ -33,4 +37,3 @@ _Check [All Pages](/all-pages.html)  for an automated list, and click the column
 
 - [[Obsidian+Git for GPTs and ChatGPT conversations, 2024-01-21]]
 - [[Obsidian+Git]] - topic page
-- [[Path Shift People Store]]

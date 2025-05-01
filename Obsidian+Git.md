@@ -5,4 +5,4 @@ Pete suggests the use of Obsidian and Git to help you track your GPTs' custom in
 This is an unfolding topic. This list will continue to grow as Pete delivers more videos and other materials.
 
 - [[Obsidian+Git for GPTs and ChatGPT conversations, 2024-01-21]]
-- Obsidian videos by Pete in the [[Path Shift People Store]]
+- [Obsidian Introduction with Pete](https://store.pathshiftpeople.com/l/obsidian-introduction-with-pete) (name your price, I suggest you pay $0), 2024-01-22

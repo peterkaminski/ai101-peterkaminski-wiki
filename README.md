@@ -1,10 +1,12 @@
 # Welcome to the AI 101 website
 
-**AI 101** is an **[AI Salon](http://thesalon.ai/)** guild. This website hosts useful resources for our community. Your host is Peter Kaminski.
+**AI 101,** also known as **Learn and Do with Peter,** was an **[AI Salon](http://thesalon.ai/)** guild active from about December 2023 to December 2024. This website was used to host useful resources for that community, and you may still find useful and interesting information here. Your host is Peter Kaminski.
+
+I now have a top-level link list of my AI resources, see <https://peterkaminski.ai>.
 
 ## Discussion Space
 
-Our main discussion space is in **[Learn and Do with Peter](https://aisalon.mn.co/spaces/12680311/feed)** guild on the **AI Salon** community site. Free **AI Salon** registration is required to participate.
+Our main discussion space was in **[Learn and Do with Peter](https://aisalon.mn.co/spaces/12680311/feed)** guild on the **AI Salon** community site. Free **AI Salon** registration is required to participate.
 
 ## Topics
 
@@ -23,9 +25,9 @@ _Click the topic name to go to an index page for that topic._
 
 ## Live Session Recordings
 
-Pete hosts live **AI 101** videoconferences. Check the "Events" tab in **[Peter's AI 101](https://aisalon.mn.co/share/phFsHUTlVUiSHKGt)** discussion space for upcoming events.
+Pete hosted live **AI 101** videoconferences.
 
-The sessions listed below have pages on this website with a link to the recording, and any chats, summaries, or downloadable files.
+The sessions listed below have pages on this website with a link to the recording, and any chats, summaries, or downloadable files. There may be other sessions that aren't uploaded yet.
 
 Click on the name of a session to go to that session's web page.
 
@@ -112,5 +114,4 @@ We'll have more comprehensive setup instructions on this website soon.
 
 ## Other Resources
 
-- Pete has additional tutorial videos in the [[Path Shift People Store]]. Prices vary, from $0 and up.
 - RJ has a great organized and curated list of resources for getting into AI, at [Meetup Group AI 101 Links](https://mysiteon.yolasite.com/ai101links.php).
