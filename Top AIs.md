@@ -24,3 +24,11 @@ There are now a number of other great ones, let Pete know which are your favorit
 ## Top Video Generators
 
 There are now a number of good video generators, and the list of the top ones keeps changing. Let Pete know which are your favorites and why.
+
+## Top Coding Assistants
+
+- Claude Code - Pete's fave, very powerful
+- Windsurf
+- Cursor
+- OpenHands
+- Codex CLI
